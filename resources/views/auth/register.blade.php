@@ -1,13 +1,25 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
-
-        <!-- Name -->
+		<!-- Startup Name -->
+		<div>
+			<x-input-label for="startup_name" :value="__('StartUp name')" />
+			<x-text-input id="startup_name" class="block mt-1 w-full" type="text" name="startup_name" :value="old('startup_name')" required autofocus />
+			<x-input-error :messages="$errors->get('startup_name')" class="mt-2" />
+		</div>
+				<!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
+
+				<!-- lastname -->
+		<div>
+			<x-input-label for="lastname" :value="__('Lastname')" />
+			<x-text-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus />
+			<x-input-error :messages="$errors->get('lastname')" class="mt-2" />
+		</div>
 
         <!-- Email Address -->
         <div class="mt-4">
@@ -15,6 +27,22 @@
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
+
+
+		<!-- Mobile -->
+		<div>
+			<x-input-label for="mobile" :value="__('Mobile')" />
+			<x-text-input id="mobile" class="block mt-1 w-full" type="text" name="mobile" :value="old('mobile')" required autofocus />
+			<x-input-error :messages="$errors->get('mobile')" class="mt-2" />
+		</div>
+
+
+
+		<select name="level" id="level">
+			<option value="mvp">mvp</option>
+			<option value="prototype">prototype</option>
+			<option value="idea">idea </option>
+		</select>
 
         <!-- Password -->
         <div class="mt-4">
