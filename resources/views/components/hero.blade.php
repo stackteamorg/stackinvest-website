@@ -7,7 +7,7 @@
            <img src="images/shape/190.svg" alt="" class="shapes bg-shape">
            <div class="container">
                <div class="illustration-container">
-                   <img src={{ asset('images/assets/screen_17.png') }} alt="">
+                   <img src="{{ asset('images/assets/screen_17.png') }}" alt="">
                </div>
                <div class="row">
                    <div class="col-lg-6">
@@ -18,7 +18,7 @@
                        <form action="index(appointment-scheduling).html#">
                            <input type="email" placeholder="ihidago@ujufidnan.gov">
                            <button class="d-flex justify-content-center align-items-center"><img
-                                   src={{ asset('images/icon/119.svg') }} alt=""></button>
+                                   src="{{ asset('images/icon/119.svg') }}" alt=""></button>
                        </form>
                        <p class="term-text">Already using Deski? <a href="login.html">Sign in.</a></p>
                    </div>
@@ -30,31 +30,31 @@
                    <div class="partnerSliderTwo">
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-21.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-21.png') }}" alt=""></div>
                        </div>
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-22.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-22.png') }}" alt=""></div>
                        </div>
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-23.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-23.png') }}" alt=""></div>
                        </div>
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-24.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-24.png') }}" alt=""></div>
                        </div>
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-25.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-25.png') }}" alt=""></div>
                        </div>
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-22.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-22.png') }}" alt=""></div>
                        </div>
                        <div class="item">
                            <div class="img-meta d-flex align-items-center"><img
-                                   src={{ asset('images/logo/logo-24.png') }} alt=""></div>
+                                   src="{{ asset('images/logo/logo-24.png') }}" alt=""></div>
                        </div>
                    </div>
                </div>
