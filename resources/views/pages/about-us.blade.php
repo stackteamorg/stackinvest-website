@@ -22,11 +22,11 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#fd6a5e">
 		<title>Deski-Saas & Software HTML Template</title>
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+		<link rel="icon" type="image/png" sizes="56x56" href="{{asset('images/fav-icon/icon.png')}}">
 		<!-- Main style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="{{asset ('assets/css/style.css')}}">
 		<!-- responsive style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="{{asset('assets(css/responsive.css')}}">
 
 		<!-- Fix Internet Explorer ______________________________________-->
 		<!--[if lt IE 9]>
@@ -41,7 +41,7 @@
 			<!-- ===================================================
 				Loading Transition
 			==================================================== -->
-			<section>
+			<!-- <section>
 				<div id="preloader">
 					<div id="ctn-preloader" class="ctn-preloader">
 						<div class="animation-preloader">
@@ -66,7 +66,7 @@
 						</div>	
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 
 			<!-- 
@@ -74,9 +74,9 @@
 				Theme Main Menu
 			============================================== 
 			-->
-			<div class="theme-main-menu sticky-menu theme-menu-two">
+			<!-- <div class="theme-main-menu sticky-menu theme-menu-two">
 				<div class="d-flex align-items-center justify-content-center">
-					<div class="logo"><a href="index-customer-support.html"><img src="images/logo/deski_01.svg" alt=""></a></div>
+					<div class="logo"><a href="index-customer-support.html"><img src="{{asset ('images/logo/deski_01.svg')}}" alt=""></a></div>
 
 					<nav id="mega-menu-holder" class="navbar navbar-expand-lg">
 						<div  class="container nav-container">
@@ -92,104 +92,104 @@
 								            	<ul class="mega-menu d-flex">
 									            	<li>
 										            	<a href="index-event.html" class="dropdown-item img-box">
-										            		<img src="images/menu/home01.png" alt="">
+										            		<img src="{{asset ('images/menu/home01.png')}}" alt="">
 										            		<span class="font-rubik">Event Organiser</span>
 										            	</a>
 										            </li>
 										            <li>
 										            	<a href="index-doc.html" class="dropdown-item img-box">
-										            		<img src="images/menu/home02.png" alt="">
+										            		<img src="{{asset ('images/menu/home02.png')}}" alt="">
 										            		<span class="font-rubik">Doc landing</span>
 										            	</a>
 										            </li>
 										            <li>
 										            	<a href="index.html" class="dropdown-item img-box">
-										            		<img src="images/menu/home03.png" alt="">
+										            		<img src="{{asset('images/menu/home03.png')}}" alt="">
 										            		<span class="font-rubik">Project Management</span>
 										            	</a>
 										            </li>
 										            <li>
 										            	<a href="index-customer-support.html" class="dropdown-item img-box">
-										            		<img src="images/menu/home04.png" alt="">
+										            		<img src="{{asset ('images/menu/home04.png')}}" alt="">
 										            		<span class="font-rubik">Customer Support</span>
 										            	</a>
 										            </li>
 										            <li>
 										            	<a href="index(product-landing).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home05.png" alt="">
+										            		<img src="{{asset ('images/menu/home05.png')}}" alt="">
 										            		<span class="font-rubik">Product landing</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(product-landing-dark).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home06.png" alt="">
+										            		<img src="{{asset ('images/menu/home06.png')}}" alt="">
 										            		<span class="font-rubik">Product landing Dark</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(note-taking).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home07.png" alt="">
+										            		<img src="{{asset('images/menu/home07.png')}}" alt="">
 										            		<span class="font-rubik">Note Taking App landing</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(video-editor).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home08.png" alt="">
+										            		<img src="{{asset ('images/menu/home08.png')}}" alt="">
 										            		<span class="font-rubik">Video Editor Landing</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(appointment-scheduling).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home10.png" alt="">
+										            		<img src="{{asset('images/menu/home10.png')}}" alt="">
 										            		<span class="font-rubik">Appointment Scheduling</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(mobile-appV1).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home11.png" alt="">
+										            		<img src="{{asset('images/menu/home11.png')}}" alt="">
 										            		<span class="font-rubik">Mobile App Landing</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(doc-signature).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home12.png" alt="">
+										            		<img src="{{asset ('images/menu/home12.png')}}" alt="">
 										            		<span class="font-rubik">Doc Signature Landing</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(webiste-builder).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home13.png" alt="">
+										            		<img src="{{asset('images/menu/home13.png')}}" alt="">
 										            		<span class="font-rubik">Website Builder</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(form-survey).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home14.png" alt="">
+										            		<img src="{{asset('images/menu/home14.png')}}" alt="">
 										            		<span class="font-rubik">Form & Survey</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="index(vr).html" class="dropdown-item img-box">
-										            		<img src="images/menu/home16.png" alt="">
+										            		<img src="{{asset('images/menu/home16.png')}}" alt="">
 										            		<span class="font-rubik">VR Landing</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<a href="coming-soon-v1.html" class="dropdown-item img-box">
-										            		<img src="images/menu/home09.png" alt="">
+										            		<img src="{{asset('images/menu/home09.png')}}" alt="">
 										            		<span class="font-rubik">Coming Soon</span>
 										            	</a>
 										        	</li>
 										        	<li>
 										            	<div class="img-box">
-										            		<img src="images/menu/home15.png" alt="">
+										            		<img src="{{asset('images/menu/home15.png')}}" alt="">
 										            		<div class="hover d-flex align-items-center justify-content-center"><div class="font-rubik">Coming Soon</div></div>
 										            	</div>
 										            	<span class="font-rubik">E-commerce</span>
 										        	</li>
-									            </ul> 
+									            </ul>  -->
 								            </div> <!-- /.dropdown-menu -->
-								        </li>
+								        <!-- </li>
 								        <li class="nav-item dropdown">
 								            <a class="nav-link dropdown-toggle" href="about-us(cs).html#" data-toggle="dropdown">Portfolio</a>
 								            <ul class="dropdown-menu">
@@ -210,9 +210,9 @@
 									        	</li>
 									        	<li>
 									            	<a href="portfolio-detailsV1.html" class="dropdown-item">Classic Details</a>
-									        	</li>
+									        	</li> -->
 								            </ul> <!-- /.dropdown-menu -->
-								        </li>
+								        <!-- </li>
 								        <li class="nav-item dropdown mega-dropdown-md active">
 								        	<a class="nav-link dropdown-toggle" href="about-us(cs).html#" data-toggle="dropdown">Pages</a>
 							                <ul class="dropdown-menu">
@@ -314,9 +314,9 @@
 									            </li>
 									            <li>
 									            	<a href="blog-details-v1.html" class="dropdown-item">Blog Details</a>
-									        	</li>
+									        	</li> -->
 								            </ul> <!-- /.dropdown-menu -->
-								        </li>
+								        <!-- </li>
 								        <li class="nav-item dropdown">
 								            <a class="nav-link dropdown-toggle" href="about-us(cs).html#" data-toggle="dropdown">Docs</a>
 								            <ul class="dropdown-menu">
@@ -334,9 +334,9 @@
 									            </li>
 									            <li>
 									            	<a href="changelog.html" class="dropdown-item">Changelog <code class="text-danger">**</code></a>
-									            </li>
+									            </li> -->
 								            </ul> <!-- /.dropdown-menu -->
-								        </li>
+								        <!-- </li>
 								   </ul>
 
 									<ul class="right-widget">
@@ -364,7 +364,7 @@
 						   	</div>
 						</div> 
 					</nav>
-				</div>
+				</div> -->
 			</div> <!-- /.theme-main-menu -->
 
 
@@ -614,7 +614,7 @@
 						</div>
 					</div>
 				</div>
-			</div> <!-- /.team-section-two -->
+			</div> /.team-section-two
 
 
 
@@ -624,16 +624,16 @@
 				Fancy Short Banner Three
 			=====================================================
 			-->
-			<div class="fancy-short-banner-three mt-225 md-mt-150">
+			<!-- <div class="fancy-short-banner-three mt-225 md-mt-150">
 				<div class="container">
 					<div class="bg-wrapper">
 						<div class="row align-items-center">
 							<div class="col-lg-6">
 								<div class="title-style-one">
 									<h6 class="font-rubik" style="color:#F96F60">Start your free trial.</h6>
-									<h2>New here? Start your free trial now.</h2>
+									<h2>New here? Start your free trial now.</h2> -->
 								</div> <!-- /.title-style-one -->
-							</div>
+							<!-- </div>
 							<div class="col-lg-6">
 								<div class="form-wrapper">
 									<form action="about-us(cs).html#">
@@ -641,7 +641,7 @@
 										<button>Start trial</button>
 									</form>
 									<p class="font-rubik">Already a member? <a href="login.html">Sign in.</a></p>
-								</div> <!-- /.form-wrapper -->
+								</div> /.form-wrapper -->
 							</div>
 						</div>
 					</div> <!-- /.bg-wrapper -->
@@ -722,9 +722,9 @@
 			
 			
 			<!-- Scroll Top Button -->
-			<button class="scroll-top">
+			<!-- <button class="scroll-top">
 				<i class="fa fa-angle-up" aria-hidden="true"></i>
-			</button>
+			</button> -->
 
 			
 
