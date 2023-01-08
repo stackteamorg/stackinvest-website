@@ -1,47 +1,57 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+<x-app-layout>
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+	<body>
+		<div class="main-page-wrapper p0">
+			<div class="user-data-page clearfix d-lg-flex">
+				<div class="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
+					<h3 class="font-rubik">Want your best managment <br>software? <a href="sign-up.html">sign up</a></h3>
+					<div class="illustration-holder">
+						<img src={{ asset("images/assets/ils_08.svg") }} alt="" class="illustration">
+						<img src={{ asset("images/assets/ils_08.1.svg") }} alt="" class="shapes shape-one">
+						<img src={{ asset("images/assets/ils_08.2.svg") }} alt="" class="shapes shape-two">
+					</div>
+				</div> <!-- /.illustration-wrapper -->
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+				<div class="form-wrapper">
+					<form action={{ route('login') }} class="user-data-form mt-80 md-mt-40" method="POST">
+                        @csrf
+						<h2>Hi buddy, welcome <br> Back!</h2>
+						<p class="header-info pt-30 pb-50">Still don't have an account? <a href="sign-up.html">Sign up</a></p>
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
+						<div class="row">
+							<div class="col-12">
+								<div class="input-group-meta mb-80 sm-mb-70">
+									<label>Email</label>
+									<input type="email" placeholder="bolcovfed@ce.edu" name="email">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="input-group-meta mb-15">
+									<label>Password</label>
+									<input type="password" placeholder="Enter Password" class="pass_log_id" name="password">
+									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="agreement-checkbox d-flex justify-content-between align-items-center">
+									<div>
+										<input type="checkbox" id="remember">
+										<label for="remember">Keep me logged in</label>
+									</div>
+									<a href={{ route('password.request') }}>Forget Password?</a>
+								</div> <!-- /.agreement-checkbox -->
+							</div>
+							<div class="col-12">
+								<button class="theme-btn-one mt-50 mb-50" type="submit">Login</button>
+							</div>
+						</div>
+					</form>
+				</div> <!-- /.form-wrapper -->
+			</div> <!-- /.user-data-page -->
+        </x-app-layout>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+			
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-            </label>
-        </div>
 
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
 
-            <x-primary-button class="ml-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>

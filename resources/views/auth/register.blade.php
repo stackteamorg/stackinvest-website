@@ -1,80 +1,95 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
-		<!-- Startup Name -->
-		<div>
-			<x-input-label for="startup_name" :value="__('StartUp name')" />
-			<x-text-input id="startup_name" class="block mt-1 w-full" type="text" name="startup_name" :value="old('startup_name')" required autofocus />
-			<x-input-error :messages="$errors->get('startup_name')" class="mt-2" />
-		</div>
-				<!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
-        </div>
 
-				<!-- lastname -->
-		<div>
-			<x-input-label for="lastname" :value="__('Lastname')" />
-			<x-text-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus />
-			<x-input-error :messages="$errors->get('lastname')" class="mt-2" />
-		</div>
+<x-app-layout>
+		<div class="main-page-wrapper p0">
+			<div class="user-data-page clearfix d-lg-flex">
+				<div class="illustration-wrapper d-flex align-items-center justify-content-center flex-column">
+					<h3 class="font-rubik">We have a “strategic” plan its <br> called doing things.</h3>
+					<div class="illustration-holder">
+						<img src={{ asset("images/assets/ils_08.svg") }} alt="" class="illustration">
+						<img src={{ asset("images/assets/ils_08.1.svg") }} alt="" class="shapes shape-one">
+						<img src={{ asset("images/assets/ils_08.2.svg") }} alt="" class="shapes shape-two">
+					</div>
+				</div> <!-- /.illustration-wrapper -->
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+				<div class="form-wrapper">
+					<form action={{ route('register') }} class="user-data-form mt-30" method="POST">
+                        @csrf
+						<h2>Join with thousands of startup!</h2>
+						<p class="header-info pt-30 pb-50">Already have an account?  <a href="login.html">Login</a></p>
 
+						<div class="row">
+							<div class="col-12">
+								<div class="input-group-meta mb-50">
+									<label>StartUp Name</label>
+									<input type="text" placeholder="Foobey" name="startup_name">
+								</div>
+							</div>
 
-		<!-- Mobile -->
-		<div>
-			<x-input-label for="mobile" :value="__('Mobile')" />
-			<x-text-input id="mobile" class="block mt-1 w-full" type="text" name="mobile" :value="old('mobile')" required autofocus />
-			<x-input-error :messages="$errors->get('mobile')" class="mt-2" />
-		</div>
+                            <div class="col-12">
+								<div class="input-group-meta mb-50">
+									<label>Name</label>
+									<input type="text" placeholder="Zahra" name="name">
+								</div>
+							</div>
 
+                            <div class="col-12">
+								<div class="input-group-meta mb-50">
+									<label>LastName</label>
+									<input type="text" placeholder="Rezaei" name="lastname">
+								</div>
+							</div>
 
+                            <div class="col-12">
+								<div class="input-group-meta mb-50">
+									<label>Mobile</label>
+									<input type="text" placeholder="09121111111" name="mobile">
+								</div>
+							</div>
 
-		<select name="level" id="level">
-			<option value="mvp">mvp</option>
-			<option value="prototype">prototype</option>
-			<option value="idea">idea </option>
-		</select>
+							<div class="col-12">
+								<div class="input-group-meta mb-50">
+									<label>Email</label>
+									<input type="email" placeholder="bolcovfed@ce.edu" name="email">
+								</div>
+							</div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+                            <div class="col-12">
+								<div class="input-group-meta mb-50">
+									<select name="level" id="level">
+                                        <option value="mvp">mvp</option>
+                                        <option value="prototype">prototype</option>
+                                        <option value="idea">idea </option>
+                                    </select>
+								</div>
+							</div>
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ml-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+							<div class="col-12">
+								<div class="input-group-meta mb-50">
+									<label>Password</label>
+									<input type="password" placeholder="Enter Password" class="pass_log_id" name="password">
+									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="input-group-meta mb-15">
+									<label>Re-type Password</label>
+									<input type="password" placeholder="Enter Password" class="pass_log_id" name="password_confirmation">
+									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="agreement-checkbox d-flex justify-content-between align-items-center sm-mt-10">
+									<div>
+										<input type="checkbox" id="agree_to_policy">
+										<label for="agree_to_policy">By clicking "SIGN UP" I agree to the Terms and Conditions and Privacy Policy.</label>
+									</div>
+								</div> <!-- /.agreement-checkbox -->
+							</div>
+							<div class="col-12">
+								<button type="submit" class="theme-btn-one mt-30 mb-50">Sign Up</button>
+							</div>
+						</div>
+					</form>
+				</div> <!-- /.form-wrapper -->
+			</div> <!-- /.user-data-page -->
+        </x-app-layout>

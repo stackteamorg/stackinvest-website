@@ -14,4 +14,20 @@
             </div>
         </div>
     </div>
+
+    <body> 
+   
+        <div class="container">
+          <div class="card">
+            <div class="card-header">Laravel Custom Logout</div>
+            <div class="card-body"><div class="col-md-12 text-center">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="btn btn-primary">Logout</button>
+                    </form>
+                </div></div> 
+          </div>
+        </div>
+      
+      </body>
 </x-app-layout>

@@ -144,10 +144,10 @@
                                     </ul>
                                 </div> <!-- /.dropdown-menu -->
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{route('about.us')}}"
                                     class="nav-link">درباره ما</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a href="index(appointment-scheduling).html#service"
                                     class="nav-link">فرآیندها و رویه ها</a>
