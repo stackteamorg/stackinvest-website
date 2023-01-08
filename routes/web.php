@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,5 +32,13 @@ Route::middleware('auth')->group(function () {
 
 //Contact Us Route
 Route::get('/contact-us', [ContactUsController::class, 'create'])->name('cantact.us');
+//About Us Route
+Route::get('/about-us',[AboutUsController::class,'create'])->name('about.us');
+
+
+
+
+
+
 
 require __DIR__ . '/auth.php';

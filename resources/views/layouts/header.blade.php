@@ -32,7 +32,7 @@
                         <ul class="navbar-nav main-side-nav font-gordita" id="one-page-nav">
                             <li class="nav-item dropdown position-static">
                                 <a class="nav-link dropdown-toggle" href="index(appointment-scheduling).html#"
-                                    data-toggle="dropdown">Home</a>
+                                    data-toggle="dropdown">{{__('header.menu1')}}</a>
                                 <div class="dropdown-menu">
                                     <ul class="mega-menu d-flex">
                                         <li>
@@ -145,16 +145,20 @@
                                 </div> <!-- /.dropdown-menu -->
                             </li>
                             <li class="nav-item">
-                                <a href="index(appointment-scheduling).html#feature"
-                                    class="nav-link">Features</a>
+                                <a href="{{route('about.us')}}"
+                                    class="nav-link">درباره ما</a>
                             </li>
                             <li class="nav-item">
                                 <a href="index(appointment-scheduling).html#service"
-                                    class="nav-link">Services</a>
+                                    class="nav-link">فرآیندها و رویه ها</a>
                             </li>
                             <li class="nav-item">
                                 <a href="index(appointment-scheduling).html#feedback"
-                                    class="nav-link">Feedback</a>
+                                    class="nav-link">سرمایه گذاران</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index(appointment-scheduling).html#feedback"
+                                    class="nav-link">تماس با ما</a>
                             </li>
                         </ul>
                     </div>
