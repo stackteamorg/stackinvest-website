@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Pagination Language Lines
+    | hero Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are used by the paginator library to build

@@ -27,12 +27,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
     <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href={{ asset('fonts/recoleta/stylesheet.css') }}>
-    <link rel="stylesheet" type="text/css" href={{ asset('fonts/gordita/stylesheet.css') }}>
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/recoleta/stylesheet.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/gordita/stylesheet.css') }}">
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href={{ asset('assets/css/style.css') }}>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href={{ asset('assets/css/responsive.css') }}>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
 
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
@@ -47,7 +47,7 @@
         <!-- ===================================================
     Loading Transition
    ==================================================== -->
-        {{-- @include('layouts.loading'); --}}
+        @include('layouts.loading');
 
         <!-- ===================================================
     Header
@@ -75,25 +75,25 @@
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!-- jQuery -->
-        <script src={{ asset('assets/vendor/jquery.min.js') }}></script>
+        <script src="{{ asset('assets/vendor/jquery.min.js') }}"></script>
         <!-- Popper js -->
-        <script src={{ asset('assets/vendor/popper.js/popper.min.js') }}></script>
+        <script src="{{ asset('assets/vendor/popper.js/popper.min.js') }}"></script>
         <!-- Bootstrap JS -->
-        <script src={{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}></script>
+        <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
         <!-- menu  -->
-        <script src={{ asset('assets/vendor/mega-menu/assets/js/custom.js') }}></script>
+        <script src="{{ asset('assets/vendor/mega-menu/assets/js/custom.js') }}"></script>
         <!-- AOS js -->
-        <script src={{ asset('assets/vendor/aos-next/dist/aos.js') }}></script>
+        <script src="{{ asset('assets/vendor/aos-next/dist/aos.js') }}"></script>
         <!-- js count to -->
-        <script src={{ asset('assets/vendor/jquery.appear.js') }}></script>
-        <script src={{ asset('assets/vendor/jquery.countTo.js') }}></script>
+        <script src="{{ asset('assets/vendor/jquery.appear.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jquery.countTo.js') }}"></script>
         <!-- Slick Slider -->
-        <script src={{ asset('assets/vendor/slick/slick.min.js') }}></script>
+        <script src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script>
         <!-- Fancybox -->
-        <script src={{ asset('assets/vendor/fancybox/dist/jquery.fancybox.min.js') }}></script>
+        <script src="{{ asset('assets/vendor/fancybox/dist/jquery.fancybox.min.js') }}"></script>
 
         <!-- Theme js -->
-        <script src={{ asset('assets/js/theme.js') }}></script>
+        <script src="{{ asset('assets/js/theme.js') }}"></script>
     </div> <!-- /.main-page-wrapper -->
 </body>
 

@@ -377,11 +377,11 @@
 			<div class="fancy-hero-two">
 				<div class="bg-wrapper">
 					<div class="container">
-						<div class="page-title">About us</div>
+						<div class="page-title">{{__('about-us.main-title')}}</div>
 						<div class="row">
 							<div class="col-xl-8 col-lg-10 col-md-10 m-auto">
-								<h1 class="heading">World best customer support portal</h1>
-								<p class="sub-heading">deski helps teams of all sizes get better at delivering effortless customer service experiences.</p>
+								<h1 class="heading">{{__('about-us.main-heading')}}</h1>
+								<p class="sub-heading">{{__('about-us.sub-heading')}}</p>
 							</div>
 						</div>
 					</div>
@@ -404,8 +404,8 @@
 					<div class="title-style-two text-center mb-35 md-mb-10">
 						<div class="row">
 							<div class="col-lg-10 m-auto">
-								<p>Our Story</p>
-								<h2>The world’s first Conversational Relationship Platform</h2>
+								<h2>{{__('about-us.heading-story')}}</h2>
+								<p>{{__('about-us.main-story')}}</p>
 							</div>
 						</div>
 					</div>
