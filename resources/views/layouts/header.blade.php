@@ -11,13 +11,13 @@
         <div class="right-widget order-lg-3">
             <ul class="d-flex align-items-center">
                 <li>
-                    <a href="login.html" class="signIn-action d-flex align-items-center">
+                    <a href="{{ route('login') }}" class="signIn-action d-flex align-items-center">
                         <img src="images/icon/120.svg" alt="">
                         <span>login</span>
                     </a>
                 </li>
                 <li>
-                    <a href="sign-up.html" class="signup-btn">Sign up</a>
+                    <a href="{{ route('register') }}" class="signup-btn">Sign up</a>
                 </li>
             </ul>
         </div>

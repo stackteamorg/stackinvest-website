@@ -20,10 +20,11 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('email')->unique();
             $table->string('mobile')->unique();
-            $table->enum('level',['mvp','prototype','idea'])->nullable();
+            $table->enum('level', ['mvp', 'prototype', 'idea'])->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamp('mobile_verified_at')->nullable();
             $table->string('password');
+            $table->foreignId('role_id')->references('id')->on('roles')->default(1)->cascadeOnUpdate()->cascadeOnDelete();
             $table->rememberToken();
             $table->timestamps();
         });
