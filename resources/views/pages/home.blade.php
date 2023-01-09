@@ -1,4 +1,5 @@
    <x-app-layout>
+<<<<<<< HEAD
        <!--
    =============================================
     Theme Hero Banner
@@ -548,4 +549,13 @@ Fancy Short Banner Ten
            <img src={{ asset('images/shape/211.svg') }} alt="" class="shapes shape-two">
        </div> <!-- /.fancy-short-banner-ten -->
 
+=======
+      <x-hero></x-hero>
+      <x-hero1></x-hero1>
+      <x-hero2></x-hero2>
+      <x-hero3></x-hero3>
+      <x-hero4></x-hero4>
+      <x-hero5></x-hero5>
+      <x-hero6></x-hero6>
+>>>>>>> 35665425f567e3043c6c1fab45ec85a63a286877
    </x-app-layout>

@@ -1,5 +1,4 @@
 <?php
-
 use App\Http\Controllers\ConsultantRequestController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\ProfileController;
@@ -31,7 +30,6 @@ Route::middleware('auth')->group(function () {
 });
 
 //Contact Us Route
-
 Route::get('/contact-us', [ContactUsController::class, 'create'])->name('contact.us');
 Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact.us.request');
 //Consultant Request Route

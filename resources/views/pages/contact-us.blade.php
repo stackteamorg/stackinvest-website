@@ -47,12 +47,14 @@
                                     alt="">
                             </div>
                             <a href={{ route('consultant') }} class="font-rubik">درخواست مشاوره</a>
+
                         </div> <!-- /.address-info -->
                     </div>
                     <div class="col-lg-4 col-sm-6 d-lg-flex">
                         <div class="address-info">
                             <div class="icon d-flex align-items-end"><img src={{ asset('images/icon/46.svg') }}
                                     alt="">
+
                             </div>
                             <div class="title">Social Media</div>
                             <p class="font-rubik">Find on social media</p>
@@ -91,6 +93,7 @@
                                 <x-text-input type="text" placeholder="Michel" name="username" :value="old('username')"
                                     autofocus />
                                 <x-input-error :messages="$errors->get('username')" class="mt-2" />
+
                             </div>
                         </div>
                         <div class="col-md-6" data-aos="fade-right" data-aos-duration="1200">
@@ -107,6 +110,7 @@
                                 <x-text-input type="subject" placeholder="Michel" name="subject" :value="old('subject')"
                                     autofocus />
                                 <x-input-error :messages="$errors->get('subject')" class="mt-2" />
+
                             </div>
                         </div>
                         <div class="col-12" data-aos="fade-up" data-aos-duration="1200">

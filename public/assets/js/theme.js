@@ -1,3 +1,4 @@
+
 (function (a) {
     var e = a(".timer"); e.length && e.appear(function () { e.countTo() }); a(window).on("scroll", function () { var b = a(".sticky-menu"); 100 <= a(window).scrollTop() ? b.addClass("fixed") : b.removeClass("fixed") }); a(window).on("scroll", function () { 200 < a(this).scrollTop() ? a(".scroll-top").fadeIn() : a(".scroll-top").fadeOut() }); a(".scroll-top").on("click", function () { a("html, body").animate({ scrollTop: 0 }, 1500); return !1 }); a("a.scroll-target").on("click", function () {
         if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//,
@@ -66,3 +67,4 @@
         }))
     })
 })(jQuery);
+

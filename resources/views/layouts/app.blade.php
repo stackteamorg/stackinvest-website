@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href={{ asset('assets/css/style.css') }}>
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href={{ asset('assets/css/responsive.css') }}>
+
 </head>
 
 <body data-spy="scroll" data-target="#one-page-nav" data-offset="120">
@@ -41,12 +42,14 @@
         <!-- ===================================================
     Loading Transition
    ==================================================== -->
-        {{-- @include('layouts.loading'); --}}
+
+        @include('layouts.loading')
 
         <!-- ===================================================
     Header
    ==================================================== -->
         @include('layouts.header')
+
 
         <main>
             {{ $slot }}
@@ -85,9 +88,12 @@
         <script src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script>
         <!-- Fancybox -->
         <script src={{ asset('assets/vendor/fancybox/dist/jquery.fancybox.min.js') }}></script>
+
         <!-- Theme js -->
         <script src="{{ asset('assets/js/theme.js') }}"></script>
     </div> <!-- /.main-page-wrapper -->
 </body>
+
+
 
 </html>
