@@ -1,6 +1,5 @@
 
 <x-app-layout>
-
 	<body>
 		<div class="main-page-wrapper p0">
 			<div class="user-data-page clearfix d-lg-flex">
@@ -22,21 +21,23 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="input-group-meta mb-80 sm-mb-70">
-									<label>Email</label>
-									<input type="email" placeholder="bolcovfed@ce.edu" name="email">
+									<x-input-label for="email" :value="__('email')" />
+									<x-text-input type="email" placeholder="stackinvest@gmail.come" name="email" :value="old('email')" />
+									<x-input-error :messages="$errors->get('email')" class="mt-2" />
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="input-group-meta mb-15">
-									<label>Password</label>
-									<input type="password" placeholder="Enter Password" class="pass_log_id" name="password">
+									<x-input-label for="password" :value="__('password')" />
+									<x-text-input type="password" placeholder="Enter Password" name="password" />
+									<x-input-error :messages="$errors->get('password')" class="mt-2" />
 									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="agreement-checkbox d-flex justify-content-between align-items-center">
 									<div>
-										<input type="checkbox" id="remember">
+										<input type="checkbox" id="remember" name="remember">
 										<label for="remember">Keep me logged in</label>
 									</div>
 									<a href={{ route('password.request') }}>Forget Password?</a>
