@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500&display=swap);
-@import url(../fonts/gilroy/fonts.css);
+/* @import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500&display=swap); */
+/* @import url(../fonts/gilroy/fonts.css);
 @import url(../fonts/gordita/stylesheet.css);
-@import url(../fonts/recoleta/stylesheet.css);
+@import url(../fonts/recoleta/stylesheet.css); */
 @import url(../vendor/bootstrap/css/bootstrap-rtl.min.css);
 @import url(framework.css);
 @import url(../vendor/mega-menu/assets/css/menu.css);
@@ -12,11 +12,24 @@
 @import url(../vendor/fancybox/dist/jquery.fancybox.min.css);
 @import url(../fonts/icon/font/flaticon.css);
 @import url(custom-animation.css);
+@import url(../fonts/yekan/font.css);
 
 @font-face {
     font-family: font-awesome;
     src: url('../fonts/font-awesome/fonts/fontawesome-webfont.ttf');
     src: url('../fonts/font-awesome/fonts/fontawesome-webfont.eot'), url('../fonts/font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg')
+}
+
+*,
+body,
+html {
+    font-family: 'yekan';
+    direction: rtl;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
 }
 
 .ctn-preloader {
@@ -705,7 +718,6 @@ h6 {
 }
 
 .title-style-eleven h2 {
-    font-family: gordita;
     font-size: 58px;
     font-weight: 500;
     line-height: 1.29em
@@ -756,7 +768,6 @@ h6 {
 }
 
 .title-style-thirteen h2 {
-    font-family: gordita;
     font-weight: 700;
     font-size: 72px;
     line-height: 1.25em;
@@ -842,7 +853,6 @@ body .theme-btn-one:hover {
 }
 
 body .theme-btn-two {
-    font-family: gilroy-semibold;
     font-size: 18px;
     color: #fff;
     line-height: 48px;
@@ -859,7 +869,6 @@ body .theme-btn-two:hover {
 }
 
 body .theme-btn-three {
-    font-family: gilroy-semibold;
     font-size: 18px;
     color: var(--red-light);
     line-height: 51px;
@@ -890,7 +899,6 @@ body .theme-btn-four:hover {
 }
 
 body .theme-btn-five {
-    font-family: Rubik, sans-serif;
     line-height: 56px;
     padding: 0 35px;
     text-align: center;
@@ -1008,7 +1016,6 @@ body .theme-btn-ten:before {
 }
 
 body .theme-btn-eleven {
-    font-family: gordita;
     font-weight: 500;
     font-size: 18px;
     line-height: 48px;
@@ -1025,7 +1032,6 @@ body .theme-btn-eleven:hover {
 }
 
 body .theme-btn-twelve {
-    font-family: gordita;
     font-size: 17px;
     line-height: 48px;
     background: #ff006b;
@@ -1042,7 +1048,6 @@ body .theme-btn-twelve:hover {
 }
 
 body .theme-btn-thirteen {
-    font-family: gordita;
     font-size: 17px;
     line-height: 50px;
     background: #232323;
@@ -1057,7 +1062,6 @@ body .theme-btn-thirteen:hover {
 }
 
 body .theme-btn-fourteen {
-    font-family: gordita;
     font-size: 17px;
     line-height: 54px;
     background: #000;
@@ -1110,7 +1114,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .page-pagination-two ul li {
-    font-family: Rubik, sans-serif;
     font-size: 22px;
     color: #bababa;
     margin: 0 11px
@@ -2119,7 +2122,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .useable-tools-section h2 {
-    font-family: gilroy-black;
     font-size: 58px;
     line-height: 1.2em;
     color: #fff;
@@ -2454,7 +2456,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .clients-feedback-classic .feedback-wrapper .name {
-    font-family: gilroy-semibold;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1.6px
@@ -2510,7 +2511,6 @@ body .theme-btn-fourteen:hover {
 
 .fancy-short-banner-one .form-wrapper form input {
     text-align: right;
-    font-family: Rubik, sans-serif;
     font-size: 16px;
     width: calc(100% - 180px);
     border: none;
@@ -2669,7 +2669,6 @@ body .theme-btn-fourteen:hover {
     width: 100%;
     text-align: right;
     padding: 20px 70px 20px 15px;
-    font-family: Rubik, sans-serif;
     font-size: 22px;
     border: none;
     box-shadow: none;
@@ -2868,7 +2867,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .theme-footer-one .top-footer .footer-title {
-    font-family: Rubik, sans-serif;
     font-size: 24px;
     padding-bottom: 25px
 }
@@ -3125,7 +3123,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-text-block-one .quote-wrapper p {
-    font-family: gilroy-semibold;
     font-size: 20px;
     color: #000;
     padding-bottom: 21px
@@ -3291,7 +3288,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-text-block-three .feature-content .header h3 {
-    font-family: gilroy-semibold;
     color: #fff;
     font-size: 50px
 }
@@ -3320,7 +3316,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-text-block-three .feature-content .feature-list h4 {
-    font-family: gilroy-bold;
     font-size: 22px;
     color: #fff
 }
@@ -3386,7 +3381,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .team-section-one .controls .control {
-    font-family: Rubik, sans-serif;
     font-size: 20px;
     display: inline-block;
     position: relative;
@@ -3437,7 +3431,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .team-section-one .team-member h4 {
-    font-family: Roboto, sans-serif;
     font-size: 24px;
     padding: 25px 0 6px
 }
@@ -3482,14 +3475,12 @@ body .theme-btn-fourteen:hover {
 }
 
 .feature-blog-one .post-meta .tag {
-    font-family: Rubik, sans-serif;
     font-size: 16px;
     color: rgba(10, 10, 10, .24);
     padding: 25px 0 3px
 }
 
 .feature-blog-one .post-meta .title {
-    font-family: gilroy-bold;
     font-size: 30px;
     line-height: 1.2em;
     color: #000;
@@ -3565,7 +3556,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .block-style-three h4 {
-    font-family: gilroy-bold;
     font-size: 22px;
     padding: 25px 0 20px
 }
@@ -3609,7 +3599,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .block-style-four h4 {
-    font-family: gilroy-bold;
     font-size: 24px;
     padding: 9px 0 20px
 }
@@ -3661,7 +3650,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .feature-blog-two .post-meta .title {
-    font-family: gilroy-bold;
     font-size: 30px;
     line-height: 1.2em;
     color: #000;
@@ -3674,7 +3662,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .feature-blog-two .post-meta .read-more {
-    font-family: Rubik, sans-serif;
     font-size: 16px;
     color: rgba(10, 10, 10, .24);
     position: absolute;
@@ -3813,7 +3800,6 @@ body .theme-btn-fourteen:hover {
     padding: 0 20px 0 52px;
     color: var(--heading);
     background: 0 0;
-    font-family: Rubik, sans-serif
 }
 
 .form-style-light .input-group-meta textarea {
@@ -3825,7 +3811,6 @@ body .theme-btn-fourteen:hover {
     border: solid 1px #d6d6d6;
     resize: none;
     padding: 20px;
-    font-family: Rubik, sans-serif
 }
 
 .form-style-light .input-group-meta input:focus {
@@ -3975,7 +3960,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .hero-banner-two .hero-text-wrapper h1 {
-    font-family: gilroy-black;
     font-size: 78px;
     line-height: 1.11em
 }
@@ -4142,7 +4126,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .block-style-five .title {
-    font-family: gilroy-bold;
     font-size: 20px;
     margin: 24px 0 29px;
     display: inline-block;
@@ -4267,7 +4250,6 @@ body .theme-btn-fourteen:hover {
     width: 100%;
     text-align: right;
     padding: 22px 0 22px 70px;
-    font-family: Rubik, sans-serif;
     font-size: 30px;
     line-height: 1.4em;
     border: none;
@@ -4912,7 +4894,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .theme-footer-two .top-footer .footer-title {
-    font-family: Rubik, sans-serif;
     font-size: 24px;
     padding-bottom: 25px
 }
@@ -4998,7 +4979,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-hero-two .heading {
-    font-family: gilroy-black;
     font-size: 80px;
     line-height: 1.1em;
     padding: 0 0 38px
@@ -5346,7 +5326,7 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-hero-three .heading {
-    font-family: gilroy-black;
+
     font-size: 80px;
     line-height: 1.1em;
     padding: 0 0 38px
@@ -5543,7 +5523,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .block-style-eight .title {
-    font-family: gilroy-bold;
     font-size: 20px;
     margin: 0 0 24px;
     display: inline-block;
@@ -5600,7 +5579,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .block-style-nine .text-wrapper h6 {
-    font-family: Roboto, sans-serif;
     font-size: 20px;
     color: rgba(0, 0, 0, .3);
     text-transform: uppercase;
@@ -5666,7 +5644,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-text-block-fourteen .text-wrapper .name {
-    font-family: gilroy-bold;
     font-size: 24px;
     color: #000;
     position: relative;
@@ -5675,7 +5652,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-text-block-fourteen .text-wrapper .name span {
-    font-family: gilroy-semibold;
     color: #aeb3b7
 }
 
@@ -5717,7 +5693,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-nav-one .nav-item .nav-link {
-    font-family: Rubik, sans-serif;
     line-height: 50px;
     border: 2px solid var(--blue-dark);
     padding: 0 15px;
@@ -5789,7 +5764,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-section-one .pr-table-wrapper .pack-name {
-    font-family: gilroy-semibold;
     font-size: 18px;
     text-transform: uppercase;
     color: #202020;
@@ -5826,7 +5800,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-section-one .pr-table-wrapper .pr-feature li {
-    font-family: Rubik, sans-serif;
     font-size: 17px;
     line-height: 42px;
     color: #464646;
@@ -5914,7 +5887,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-text-block-fifteen .text-wrapper .more-text {
-    font-family: gilroy-semibold;
     font-size: 20px;
     color: #fff;
     padding: 28px 0 20px
@@ -5985,7 +5957,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-hero-four h2 {
-    font-family: gilroy-black;
     font-size: 80px;
     line-height: 1.1em
 }
@@ -6061,7 +6032,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-nav-two .nav-item .nav-link {
-    font-family: Rubik, sans-serif;
     line-height: 50px;
     border: 2px solid var(--red-light);
     padding: 0 15px;
@@ -6109,7 +6079,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-section-two .pr-table-wrapper .pack-name {
-    font-family: gilroy-semibold;
     font-size: 18px;
     text-transform: uppercase;
     color: #202020;
@@ -6117,7 +6086,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-section-two .pr-table-wrapper .price {
-    font-family: gilroy-semibold;
     font-size: 72px;
     color: #000;
     padding: 44px 0 20px
@@ -6192,7 +6160,6 @@ body .theme-btn-fourteen:hover {
     width: 100%;
     text-align: right;
     padding: 35px 0 35px 35px;
-    font-family: Rubik, sans-serif;
     font-size: 24px;
     border: none;
     box-shadow: none;
@@ -6349,7 +6316,7 @@ body .theme-btn-fourteen:hover {
     border-bottom: solid 2px #000;
     color: var(--heading);
     background: 0 0;
-    font-family: Rubik, sans-serif
+
 }
 
 .form-style-classic .input-group-meta textarea {
@@ -6361,7 +6328,6 @@ body .theme-btn-fourteen:hover {
     border-bottom: solid 2px #000;
     resize: none;
     padding: 20px 0;
-    font-family: Rubik, sans-serif
 }
 
 .form-style-classic .input-group-meta label {
@@ -6391,7 +6357,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .faqs-header h3 {
-    font-family: gilroy-semibold;
     font-size: 36px
 }
 
@@ -6628,7 +6593,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .user-data-page .form-wrapper h2 {
-    font-family: gilroy-bold;
     font-size: 58px;
     line-height: 1.17em
 }
@@ -6654,7 +6618,6 @@ body .theme-btn-fourteen:hover {
 
 .user-data-form .input-group-meta input {
     text-align: right;
-    font-family: Rubik, sans-serif;
     width: 100%;
     height: 100%;
     font-size: 18px;
@@ -6891,13 +6854,11 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-sidebar-one .sidebar-title {
-    font-family: gilroy-bold;
     font-size: 30px;
     padding-bottom: 15px
 }
 
 .blog-sidebar-one .sidebar-categories ul li a {
-    font-family: Rubik, sans-serif;
     font-size: 18px;
     line-height: 60px;
     color: #000;
@@ -6923,7 +6884,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-sidebar-one .sidebar-recent-news .title {
-    font-family: gilroy-bold;
     font-size: 24px;
     line-height: 1.25em;
     color: #000;
@@ -7018,7 +6978,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .feature-blog-three .post-meta .post .title {
-    font-family: gilroy-bold;
     font-size: 30px;
     line-height: 1.26em;
     color: #000;
@@ -7071,7 +7030,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-v4 .post-meta .post .title {
-    font-family: gilroy-black;
     font-size: 48px;
     line-height: 1.04em;
     color: #000;
@@ -7086,7 +7044,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-v4 .post-meta .post .read-more {
-    font-family: gilroy-bold;
     font-size: 18px;
     color: #2a2a2a;
     margin-top: 30px;
@@ -7107,7 +7064,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-details-post-v1 .post-meta .mark-text {
-    font-family: gilroy-bold;
     font-size: 23px;
     color: #000;
     line-height: 1.41em;
@@ -7115,7 +7071,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-details-post-v1 .post-meta h4 {
-    font-family: gilroy-black;
     font-size: 36px;
     padding-top: 60px
 }
@@ -7149,7 +7104,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-details-post-v1 .share-area .tag-feature li:first-child {
-    font-family: gilroy-bold;
     color: #000;
     font-size: 15px
 }
@@ -7171,7 +7125,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-details-post-v1 .comment-area .title {
-    font-family: gilroy-black;
     font-size: 36px;
     padding-bottom: 40px
 }
@@ -7194,7 +7147,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-details-post-v1 .comment-area .name {
-    font-family: gilroy-semibold;
     font-size: 20px
 }
 
@@ -7232,7 +7184,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .blog-details-post-v1 .comment-form-section .title {
-    font-family: gilroy-black;
     font-size: 36px;
     padding-bottom: 15px
 }
@@ -7862,7 +7813,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-short-banner-four .title h2 {
-    font-family: gilroy-bold;
     font-size: 52px;
     line-height: 1.15em;
     color: #fff
@@ -7930,7 +7880,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .theme-footer-three .top-footer .footer-title {
-    font-family: Rubik, sans-serif;
     font-size: 24px;
     padding-bottom: 18px
 }
@@ -8012,7 +7961,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-hero-five .heading {
-    font-family: gilroy-black;
     font-size: 80px;
     line-height: 1.08em
 }
@@ -8173,7 +8121,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .map-area-one .si-content h3 {
-    font-family: gilroy-black;
     font-size: 42px
 }
 
@@ -8267,7 +8214,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .doc-sidebar .list-item li h4 {
-    font-family: gilroy-semibold;
     display: block;
     position: relative;
     line-height: 44px;
@@ -8353,13 +8299,11 @@ body .theme-btn-fourteen:hover {
 }
 
 .doc-container .doc-main-body h2 {
-    font-family: gilroy-black;
     font-size: 42px;
     padding-bottom: 25px
 }
 
 .doc-container .doc-main-body h3 {
-    font-family: gilroy-semibold;
     font-size: 28px;
     padding-bottom: 30px
 }
@@ -8492,7 +8436,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .doc-pagination ul li span {
-    font-family: gilroy-semibold;
     font-size: 22px;
     color: #000
 }
@@ -8531,7 +8474,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .theme-menu-four .navbar-nav .nav-item .nav-link {
-    font-family: Roboto, sans-serif;
     font-size: 20px;
     margin: 0 24px
 }
@@ -8592,7 +8534,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .hero-banner-four h1 {
-    font-family: 'Roboto Slab', serif;
     font-size: 85px;
     line-height: 1.14em
 }
@@ -9034,7 +8975,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .pricing-table-area-three .pr-table-wrapper ul li {
-    font-family: Rubik, sans-serif;
     font-size: 17px;
     line-height: 42px;
     color: #464646;
@@ -9143,7 +9083,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .clientSliderThree p {
-    font-family: Rubik, sans-serif;
     font-size: 28px;
     line-height: 1.71em;
     color: rgba(0, 0, 0, .8);
@@ -9249,7 +9188,6 @@ body .theme-btn-fourteen:hover {
     width: 100%;
     text-align: right;
     padding: 27px 45px 27px 35px;
-    font-family: Rubik, sans-serif;
     font-size: 24px;
     border: none;
     box-shadow: none;
@@ -9401,7 +9339,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .theme-footer-four .footer-list ul li a {
-    font-family: Rubik, sans-serif;
     color: #343434;
     line-height: 40px;
     transition: all .2s ease-in-out
@@ -9651,7 +9588,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .feature-blog-four .feature-article-meta .post-meta a {
-    font-family: 'Roboto Slab', serif;
     font-size: 30px;
     line-height: 1.3em;
     transition: all .3s ease-in-out
@@ -10014,7 +9950,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .counter-box-four .number {
-    font-family: Recoleta;
     font-size: 60px;
     color: #000
 }
@@ -12518,9 +12453,6 @@ body .theme-btn-fourteen:hover {
     animation: jumpTwo 4s infinite linear
 }
 
-.theme-footer-seven {
-    font-family: gordita
-}
 
 .theme-footer-seven .title {
     font-size: 16px;
@@ -13316,6 +13248,12 @@ body .theme-btn-fourteen:hover {
     transform: scaleX(-1)
 }
 
+.bg-shape {
+    top: 0;
+    left: 0;
+    transform: scaleX(-1)
+}
+
 .hero-banner-nine .illustration-container {
     position: absolute;
     left: -25px;
@@ -14013,7 +13951,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .terms_and_policy .nav-item .nav-link {
-    font-family: Rubik, sans-serif;
     font-size: 20px;
     line-height: 60px;
     padding: 0;
@@ -14043,7 +13980,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .terms_and_policy .tab-content h3 {
-    font-family: gilroy-semibold;
     font-size: 28px;
     padding: 50px 0 25px
 }
@@ -14633,7 +14569,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .hero-banner-eleven .hero-text-wrapper h1 {
-    font-family: gordita;
     font-weight: 700;
     font-size: 82px;
     line-height: 1.3em
@@ -15163,7 +15098,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-hero-six .heading {
-    font-family: gordita;
     font-size: 68px;
     font-weight: 500;
     line-height: initial;
@@ -15244,7 +15178,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .portfolio-block-two .hover-content h3 a {
-    font-family: gilroy-bold;
     font-size: 22px;
     color: #fff;
     position: relative
@@ -15373,7 +15306,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .portfolio-block-three .text a {
-    font-family: gilroy-semibold;
     font-size: 44px;
     line-height: 1.27em;
     color: #000;
@@ -15519,7 +15451,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .portfolio-details-one .main-content h4 {
-    font-family: gordita;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 25px;
@@ -15539,7 +15470,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .portfolio-details-one .portfolio-pagination .tp2 {
-    font-family: gordita;
     font-weight: 500;
     font-size: 25px;
     letter-spacing: -1px;
@@ -15964,7 +15894,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .block-style-thirtyThree .title {
-    font-family: gilroy-bold;
     font-size: 24px;
     margin: 25px 0;
     display: inline-block;
@@ -16197,7 +16126,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .service-details-one .accordion-style-three .card .card-header button {
-    font-family: gordita;
     font-weight: 500;
     font-size: 22px;
     padding: 30px 0 30px 35px
@@ -16228,7 +16156,6 @@ body .theme-btn-fourteen:hover {
 }
 
 .service-details-one .sidebar .category-list a {
-    font-family: gordita;
     line-height: 42px;
     color: #000;
     transition: all .3s ease-in-out
@@ -16255,7 +16182,6 @@ body .theme-btn-fourteen:hover {
 
 .service-details-one .sidebar .sidenote p:before {
     content: '“';
-    font-family: gordita;
     font-size: 80px;
     color: #fff;
     position: absolute;

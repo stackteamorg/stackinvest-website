@@ -6,6 +6,7 @@ use App\Models\ConsultantRequest;
 use App\Rules\MobileRule;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
 
 class ConsultantRequestController extends Controller
@@ -38,14 +39,13 @@ class ConsultantRequestController extends Controller
                 'mobile' => $request->mobile,
                 'investor' => $request->investor,
                 'subject' => $request->subject,
-                'requestType' => $request->type,
+                'request_type' => $request->type,
                 'city' => $request->city,
             ]);
         } catch (Exception $ex) {
             Log::error($ex->getMessage());
             return abort(500);
         }
-
-        return back()->with('message', 'Add your message successfully');
+        return back()->with('message', Lang::get('validation.success'));
     }
 }

@@ -42,26 +42,21 @@
     Loading Transition
    ==================================================== -->
 
-        @include('layouts.loading')
+        {{-- @include('layouts.loading') --}}
 
         <!-- ===================================================
     Header
    ==================================================== -->
         @include('layouts.header')
-
-
         <main>
             {{ $slot }}
         </main>
-
         <!--
    =====================================================
     Footer Style Eight
    =====================================================
    -->
         @include('layouts.footer')
-
-
         <!-- Scroll Top Button -->
         <button class="scroll-top">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -71,24 +66,28 @@
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!-- jQuery -->
-        <script src="{{ asset('assets/vendor/jquery.min.js') }}"></script>
+        <script src={{ asset('assets/vendor/jquery.min.js') }}></script>
         <!-- Popper js -->
-        <script src="{{ asset('assets/vendor/popper.js/popper.min.js') }}"></script>
+        <script src={{ asset('assets/vendor/popper.js/popper.min.js') }}></script>
         <!-- Bootstrap JS -->
-        <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+        <script src={{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}></script>
         <!-- menu  -->
-        <script src="{{ asset('assets/vendor/mega-menu/assets/js/custom.js') }}"></script>
+        <script src={{ asset('assets/vendor/mega-menu/assets/js/custom.js') }}></script>
         <!-- AOS js -->
-        <script src="{{ asset('assets/vendor/aos-next/dist/aos.js') }}"></script>
+        <script src={{ asset('assets/vendor/aos-next/dist/aos.js') }}></script>
         <!-- js count to -->
-        <script src="{{ asset('assets/vendor/jquery.appear.js') }}"></script>
-        <script src="{{ asset('assets/vendor/jquery.countTo.js') }}"></script>
+        <script src={{ asset('assets/vendor/jquery.appear.js') }}></script>
+        <script src={{ asset('assets/vendor/jquery.countTo.js') }}></script>
         <!-- Slick Slider -->
-        <script src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script>
+        <script src={{ asset('assets/vendor/slick/slick.min.js') }}></script>
         <!-- Fancybox -->
         <script src={{ asset('assets/vendor/fancybox/dist/jquery.fancybox.min.js') }}></script>
+        <!-- MixIt Up -->
+        <script src={{ asset('assets/vendor/mixitup-3/mixitup.min.js') }}></script>
+        <!-- validator js -->
+        <script src={{ asset('assets/vendor/validator.js') }}></script>
         <!-- Theme js -->
-        <script src="{{ asset('assets/js/theme.js') }}"></script>
+        <script src={{ asset('assets/js/theme.js') }}></script>
     </div> <!-- /.main-page-wrapper -->
 </body>
 

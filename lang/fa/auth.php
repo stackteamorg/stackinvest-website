@@ -11,16 +11,25 @@ return [
     | messages that we need to display to the user. You are free to modify
     | these language lines according to your application's requirements.
     |
-    */
+     */
+    'password' => 'رمز عبور',
+    'startUp_name' => 'نام استارتاپ',
+    'name' => 'نام',
+    'lastname' => 'نام خانوادگی',
+    're_type_password' => 'تکرار رمز عبور',
+    'username' => 'نام و نام خانوادگی',
+    'startup' => 'نام استارتاث',
+    'department' => 'حوزه فعالیت استارتاث',
+    'email' => 'ایمیل',
+    'mobile' => 'تلفن همراه',
+    'subject' => 'موضوع',
+    'investor' => 'نام سرمایه گذار',
+    'city' => 'شهر',
+    'type of consultant' => ' نوع سرمایه گذاری',
+    'message' => 'بیام',
+    'send request' => 'ارسال درخواست',
+    'send message' => 'ارسال بیام',
+    'online' => 'آنلاین',
+    'personal' => 'حضوری',
 
-    // 'failed' => 'These credentials do not match our records.',
-    // 'password' => 'The provided password is incorrect.',
-    // 'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'email'=>'ایمیل',
-    'password'=>'رمز عبور',
-    'startUp_name'=>'نام استارتاپ',
-    'name'=>'نام',
-    'lastname'=>'نام خانوادگی',
-    'mobile'=>'تلفن همراه',
-    're_type_password'=>'تکرار رمز عبور'
 ];

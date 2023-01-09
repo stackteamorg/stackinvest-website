@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('mobile');
             $table->string('investor');
             $table->string('subject');
-            $table->enum('requestType', ['online', 'personal']);
+            $table->enum('request_type', ['online', 'personal']);
             $table->string('city');
             $table->timestamps();
         });

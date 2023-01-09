@@ -6,6 +6,7 @@ use App\Models\Message;
 use App\Rules\MobileRule;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
 
 class ContactUsController extends Controller
@@ -37,6 +38,6 @@ class ContactUsController extends Controller
             return abort(500);
         }
 
-        return back()->with('message', 'Add your message successfully');
+        return back()->with('message', Lang::get('validation.success'));
     }
 }

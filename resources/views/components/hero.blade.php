@@ -1,4 +1,4 @@
- <!--
+<!--
    =============================================
     Theme Hero Banner
    ==============================================
@@ -24,7 +24,6 @@
                    </div>
                </div>
            </div>
-           <div class="partner-slider-two mt-130 md-mt-100">
                <div class="container">
                    <p>Simplified scheduling for more than <span>200,000,000</span> meetings</p>
                    <div class="partnerSliderTwo">

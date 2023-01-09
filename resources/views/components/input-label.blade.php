@@ -1,3 +1,2 @@
 @props(['value'])
-<label>{{ $value ?? $slot }}</label>
-
+<label class="text-lg">{{ $value ?? $slot }}</label>
