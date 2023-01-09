@@ -33,12 +33,7 @@ Route::middleware('auth')->group(function () {
 //Contact Us Route
 Route::get('/contact-us', [ContactUsController::class, 'create'])->name('cantact.us');
 //About Us Route
-Route::get('/about-us',[AboutUsController::class,'create'])->name('about.us');
-
-
-
-
-
+Route::get('/about-us', [AboutUsController::class, 'create'])->name('about.us');
 
 
 require __DIR__ . '/auth.php';

@@ -15,7 +15,7 @@
 					<form action={{ route('register') }} class="user-data-form mt-30" method="POST">
                         @csrf
 						<h2>Join with thousands of startup!</h2>
-						<p class="header-info pt-30 pb-50">Already have an account?  <a href="login.html">Login</a></p>
+						<p class="header-info pt-30 pb-50">Already have an account?  <a href={{ route('login') }}>Login</a></p>
 
 						<div class="row">
 							<div class="col-12">
