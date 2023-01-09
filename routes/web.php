@@ -1,6 +1,8 @@
 <?php
+
 use App\Http\Controllers\ConsultantRequestController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,5 +37,9 @@ Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact
 //Consultant Request Route
 Route::get('/consultant', [ConsultantRequestController::class, 'create'])->name('consultant');
 Route::post('/consultant', [ConsultantRequestController::class, 'store'])->name('consultant.request');
+
+//Investor Route
+Route::get('/investor', [InvestorController::class, 'create'])->name('investor');
+Route::post('/investor', [InvestorController::class, 'store'])->name('investor.request');
 
 require __DIR__ . '/auth.php';
