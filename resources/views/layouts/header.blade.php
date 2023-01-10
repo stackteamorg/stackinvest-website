@@ -1,6 +1,7 @@
  <div class="theme-main-menu sticky-menu theme-menu-six bg-none">
      <div class="d-flex align-items-center">
-         <div class="logo order-lg-1"><a href="index.html"><img src="images/logo/deski_06.svg" alt=""></a></div>
+         <div class="logo order-lg-1"><a href="index.html"><img src={{ asset('images/logo/logo.png') }} alt=""></a>
+         </div>
          <div class="right-widget order-lg-3">
              <ul class="d-flex align-items-center">
                  <li>

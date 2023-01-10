@@ -1,7 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500&display=swap); */
-/* @import url(../fonts/gilroy/fonts.css);
-@import url(../fonts/gordita/stylesheet.css);
-@import url(../fonts/recoleta/stylesheet.css); */
 @import url(../vendor/bootstrap/css/bootstrap-rtl.min.css);
 @import url(framework.css);
 @import url(../vendor/mega-menu/assets/css/menu.css);
@@ -26,6 +22,7 @@ html {
     font-family: 'yekan';
     direction: rtl;
     text-align: right;
+    /* overflow-x: hidden; */
 }
 
 a {
