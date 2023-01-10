@@ -10,7 +10,7 @@ Client Feedback Slider Six
                        <div class="col-lg-7 m-auto" data-aos="fade-up" data-aos-duration="1200">
                            <div class="title-style-nine text-center">
                                <h6>Testimonials</h6>
-                               <h2>What’s Our <span>Client <img src={{ asset('images/shape/201.svg') }}
+                               <h2>What’s Our <span>Client <img src="{{ asset('images/shape/201.svg') }}
                                            alt=""></span>
                                    Think About Us.</h2>
                            </div>

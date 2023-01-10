@@ -25,7 +25,7 @@ return [
     'protfo' => 'پرتفو',
     'investment request' => 'درخواست سرمایه',
     'investment process' => 'فرآیند سرمایه گذاری',
-    'entrepreneurship and investment' => 'ماموریت و چشم انداز',
+    'entrepreneurship and investment' => 'کارآفرینی و سرمایه گذاری',
+    'about us' => 'درباره ما',
     'index' => 'فهرست',
-
 ];

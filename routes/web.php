@@ -4,6 +4,12 @@ use App\Http\Controllers\ConsultantRequestController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TeamMembersController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\MissionController;
+use App\Http\Controllers\AngelController;
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +43,15 @@ Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact
 //Consultant Request Route
 Route::get('/consultant', [ConsultantRequestController::class, 'create'])->name('consultant');
 Route::post('/consultant', [ConsultantRequestController::class, 'store'])->name('consultant.request');
+
+//TeamMember Route
+Route::get('/team-members',[TeamMembersController::class,'create'])->name('team-members');
+//Portfolio
+Route::get('/portfolio',[PortfolioController::class,'create'])->name('portfolio');
+//Mission
+Route::get('/mission',[MissionController::class,'create'])->name('mission');
+//Angel
+Route::get('/angel',[AngelController::class,'create'])->name('angel');
 
 //Investor Route
 Route::get('/investor', [InvestorController::class, 'create'])->name('investor');

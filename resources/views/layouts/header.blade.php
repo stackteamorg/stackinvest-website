@@ -25,31 +25,35 @@
                      <div class="d-lg-flex justify-content-between align-items-center">
                          <ul class="navbar-nav main-side-nav font-gordita" id="one-page-nav">
                              <li class="nav-item dropdown position-static">
+                                 <a class="nav-link dropdown-toggle" href="">{{ __('header.about us') }}</a>
                                  <div class="dropdown-menu">
                                      <ul class="mega-menu d-flex">
                                          <li>
-                                             <a href="index-event.html" class="dropdown-item img-box">
+                                             <a href="{{route('team-members')}}" class="dropdown-item img-box">
                                                  <span class="font-rubik">{{ __('header.executive committe') }}</span>
                                              </a>
                                          </li>
+                        
                                          <li>
-                                             <a href="index-doc.html" class="dropdown-item img-box">
+                                             <a href="{{route('portfolio')}}" class="dropdown-item img-box">
                                                  <span class="font-rubik">{{ __('header.protfo') }}</span>
                                              </a>
                                          </li>
                                          <li>
-                                             <a href="index.html" class="dropdown-item img-box">
+                                             <a href="{{route('mission')}}" class="dropdown-item img-box">
                                                  <span
                                                      class="font-rubik">{{ __('header.entrepreneurship and investment') }}</span>
                                              </a>
                                          </li>
                                          <li>
-                                             <a href="index.html" class="dropdown-item img-box">
-                                                 <span class="font-rubik">{{ __('header.angel investor') }}/span>
+                                             <a href="{{route('angel')}}" class="dropdown-item img-box">
+                                                 <span class="font-rubik">{{ __('header.angel investor') }}</span>
                                              </a>
                                          </li>
                                      </ul>
                                  </div>
+                             </li>
+                               
                              </li>
                              <li class="nav-item dropdown position-static">
                                  <a class="nav-link dropdown-toggle" href="index(appointment-scheduling).html#"
@@ -81,6 +85,7 @@
                              <li class="nav-item dropdown position-static">
                                  <a class="nav-link" href={{ route('contact.us') }}>{{ __('header.contact us') }}</a>
                              </li>
+                            
                      </div>
                  </div>
          </nav>

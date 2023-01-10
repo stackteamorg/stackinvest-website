@@ -28,7 +28,7 @@ return [
     'type of consultant' => ' نوع سرمایه گذاری',
     'message' => 'بیام',
     'send request' => 'ارسال درخواست',
-    'send message' => 'ارسال بیام',
+    'send message' => 'ارسال پیام',
     'online' => 'آنلاین',
     'personal' => 'حضوری',
 
