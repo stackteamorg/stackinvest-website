@@ -12,10 +12,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-9 col-lg-11 m-auto">
-							<h2 class="font-rubik">اعضای هیات اجرایی استک تیم</h2>
+							<h2 class="font-rubik">{{ __('team.title') }}</h2>
 						</div>
 						<div class="col-xl-9 col-lg-11 m-auto">
-							<p class="font-rubik">استک تیم برای مشاوره های استارتاپ های نوپای شما </p>
+							<p class="font-rubik">{{ __('team.sub-title') }}</p>
 							<!-- <a href="https://html.creativegigstf.com/deski/rtl/deski/contact-us(light).html" class="theme-btn-one btn-lg mt-50 md-mt-30">Contact US</a> -->
 						</div>
 					</div>
@@ -40,8 +40,8 @@
 						<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1200">
 							<div class="team-member team-block-one mb-50" onclick="location.href='team-single.html';">
 								<div class="info">
-									<div class="desig">CEO</div>
-									<div class="name">حامد زویداوی</div>
+									<div class="desig">{{ __('team.member1') }}</div>
+									<div class="name">{{ __('team.member1') }}</div>
 								</div>
 								<div class="img-meta"><img src="{{ asset('images/gallery/team-member1.JPG') }}" alt=""></div>
 							</div> <!-- /.team-member -->
@@ -49,8 +49,8 @@
 						<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
 							<div class="team-member team-block-one mb-50" onclick="location.href='team-single.html';">
 								<div class="info">
-									<div class="desig">هیٔت مدیره</div>
-									<div class="name">مهدی همیلی</div>
+									<div class="desig">{{ __('team.member2') }}</div>
+									<div class="name">{{ __('team.member2') }}</div>
 								</div>
 								<div class="img-meta"><img src="{{ asset('images/gallery/team-member2.JPG') }}" alt=""></div>
 							</div> <!-- /.team-member -->
@@ -58,8 +58,8 @@
 						<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
 							<div class="team-member team-block-one mb-50" onclick="location.href='team-single.html';">
 								<div class="info">
-									<div class="desig">مشاور مالی</div>
-									<div class="name">محسن طاهری</div>
+									<div class="desig">{{ __('team.member3') }}</div>
+									<div class="name">{{ __('team.member3') }}</div>
 								</div>
 								<div class="img-meta"><img src="{{ asset('images/gallery/team-member3.JPG') }}" alt=""></div>
 							</div> <!-- /.team-member -->
@@ -83,7 +83,7 @@
 					<div class="border-bottom pt-130 pb-150 md-pt-80 md-pb-80">
 						<div class="row">
 							<div class="col-lg-8 col-md-9 m-auto">
-								<h2 class="font-rubik" data-aos="fade-up" data-aos-duration="1200">مایل به همکاری با ما هستید؟</h2>
+								<h2 class="font-rubik" data-aos="fade-up" data-aos-duration="1200"></h2>
 								<a href="https://html.creativegigstf.com/deski/rtl/deski/contact-us(light).html" class="theme-btn-one btn-lg mt-50 md-mt-30" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">ارسال رزومه</a>
 							</div>
 						</div>
