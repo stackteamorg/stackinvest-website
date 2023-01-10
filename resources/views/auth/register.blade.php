@@ -10,7 +10,7 @@
 					</div>
 				</div> <!-- /.illustration-wrapper -->
 
-				<div class="form-wrapper">
+				<div class="form-wrapper form-style-classic">
 					<form action={{ route('register') }} class="user-data-form mt-30" method="POST">
                         @csrf
 						<h3>لطفا اطلاعات زیر را وارد نمایید</h3>
@@ -18,47 +18,47 @@
 
 						<div class="row">
 							<div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<x-input-label for="startup_name" :value="__('auth.startUp_name')" />
-									<x-text-input type="text" placeholder="Stackteam Invest" name="startup_name" />
+									<x-text-input type="text" name="startup_name" />
 									<x-input-error :messages="$errors->get('startup_name')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<x-input-label for="name" :value="__('auth.name')" />
-									<x-text-input type="text" placeholder="Zahra" name="name" />
+									<x-text-input type="text" name="name" />
 									<x-input-error :messages="$errors->get('name')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<x-input-label for="lastname" :value="__('auth.lastname')" />
-									<x-text-input type="text" placeholder="Rezaei" name="lastname" />
+									<x-text-input type="text" name="lastname" />
 									<x-input-error :messages="$errors->get('lastname')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<x-input-label for="mobile" :value="__('auth.mobile')" />
-									<x-text-input type="text" placeholder="09121111111" name="mobile" />
+									<x-text-input type="text" name="mobile" />
 									<x-input-error :messages="$errors->get('mobile')" class="mt-2" />
 								</div>
 							</div>
 
 							<div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<x-input-label for="email" :value="__('auth.email')" />
-									<x-text-input type="email" placeholder="stackinvest@gmail.com" name="email" />
+									<x-text-input type="email" name="email" />
 									<x-input-error :messages="$errors->get('email')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<select name="level" id="level">
                                         <option value="mvp">mvp</option>
                                         <option value="prototype">prototype</option>
@@ -68,17 +68,17 @@
 							</div>
 
 							<div class="col-12">
-								<div class="input-group-meta mb-50">
+								<div class="input-group-meta input-group mb-50">
 									<x-input-label for="password" :value="__('auth.password')" />
-									<x-text-input type="password" placeholder="رمز عبور خود را وارد کنید" name="password" />
+									<x-text-input type="password" name="password" />
 									<x-input-error :messages="$errors->get('password')" class="mt-2" />
 									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
 								</div>
 							</div>
 							<div class="col-12">
-								<div class="input-group-meta mb-15">
+								<div class="input-group-meta input-group mb-15">
 									<x-input-label for="re_type_password" :value="__('auth.re_type_password')" />
-									<x-text-input type="password" placeholder="رمز عبور خود را وارد کنید" name="password_confirmation" />
+									<x-text-input type="password" name="password_confirmation" />
 									<x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
 									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
 								</div>
