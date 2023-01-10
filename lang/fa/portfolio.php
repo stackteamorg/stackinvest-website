@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Team Language Lines
+    | Portfolio Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are used by the paginator library to build
@@ -15,12 +15,9 @@ return [
 
     'title' => 'اعضای هیات اجرایی استک تیم',
     'sub-title' => 'ستک تیم برای مشاوره های استارتاپ های نوپای شما ',
-    'member1' => 'حامد زویداوی',
-    'member2' => 'مهدی همیلی',
-    'member3' => 'محسن طاهری',
-    'member1-position' => 'مدیر',
-    'member2-position' => 'مدیر اجرایی',
-    'member3-position' => 'مدیریت مالی',
-    'head-resume' => ' آیا مایل به همکاری با ما هستید؟',
+    'investor1' => 'سرمایه گذار ۱',
+    'investor2' => 'سرمایه گذار ۲',
+    'investor3' => 'سرمایه گذار ۳',
+    
 
 ];

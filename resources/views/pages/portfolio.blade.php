@@ -7,8 +7,8 @@
 			<x-app-layout>
 			<div class="fancy-hero-six">
 				<div class="container">
-					<h1 class="heading">ویترین استک تیم</h1>
-					<p class="sub-heading">استارتاپ های سرمایه‌گذاری شده توسط استک تیم</p>
+					<h1 class="heading">{{ __('portfolio.title') }}</h1>
+					<p class="sub-heading">{{ __('portfolio.sub-title') }}</p>
 				</div>
 			</div> <!-- /.fancy-hero-six -->
 
@@ -39,7 +39,7 @@
 							<div class="portfolio-block-three">
 								<a href="portfolio-detailsV1.html" class="img-holder"><img src="{{asset('images/gallery/img_24.jpg')}}" alt="" class="w-100 tran5s"></a>
 								<div class="text">
-									<div class="tag text-dark">شرکت سرمایه گذار ۱</div>
+									<div class="tag text-dark">{{ __('portfolio.investor1') }}</div>
 									<h4></h4>
 								</div>
 							</div> <!-- /.portfolio-block-three -->
@@ -48,7 +48,7 @@
 							<div class="portfolio-block-three">
 								<a href="portfolio-detailsV1.html" class="img-holder"><img src="{{asset('images/gallery/img_27.jpg')}}" alt="" class="w-100 tran5s"></a>
 								<div class="text">
-									<div class="tag text-dark">شرکت سرمایه گذار۲</div>
+									<div class="tag text-dark">{{ __('portfolio.investor2') }}</div>
 									<h4></h4>
 								</div>
 							</div> <!-- /.portfolio-block-three -->
@@ -57,7 +57,7 @@
 							<div class="portfolio-block-three">
 								<a href="portfolio-detailsV1.html" class="img-holder"><img src="{{asset('images/gallery/img_26.jpg')}}" alt="" class="w-100 tran5s"></a>
 								<div class="text">
-									<div class="tag text-dark">شرکت سرمایه گذار ۳</div>
+									<div class="tag text-dark">{{ __('portfolio.investor3') }}</div>
 									<h4></h4>
 								</div>
 							</div> <!-- /.portfolio-block-three -->
@@ -66,7 +66,7 @@
 							<div class="portfolio-block-three">
 								<a href="portfolio-detailsV1.html" class="img-holder"><img src="{{asset('images/gallery/img_25.jpg')}}" alt="" class="w-100 tran5s"></a>
 								<div class="text">
-									<div class="tag text-dark">شرکت سرمایه گذار ۴</div>
+									<div class="tag text-dark">{{ __('portfolio.investor4') }}</div>
 									<h4></h4>
 								</div>
 							</div> <!-- /.portfolio-block-three -->
