@@ -8,6 +8,7 @@ use App\Rules\MobileRule;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Redirect;
 
 class InvestorController extends Controller
 {
@@ -38,6 +39,6 @@ class InvestorController extends Controller
             Log::error($exception->getMessage());
             return abort(500);
         }
-        return back()->with('message', 'Submitted successfully');
+       return Redirect::route('home')->with('message', 'درخواست شما با موفقیت ارسال شد');
     }
 }

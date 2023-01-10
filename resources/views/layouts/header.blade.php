@@ -55,7 +55,7 @@
                              </li>
                                
                              </li>
-                             <li class="nav-item dropdown position-static">
+                             <!-- <li class="nav-item dropdown position-static">
                                  <a class="nav-link dropdown-toggle" href="index(appointment-scheduling).html#"
                                      data-toggle="dropdown">{{ __('header.investors') }}</a>
                                  <div class="dropdown-menu">
@@ -77,7 +77,7 @@
                                          </li>
                                      </ul>
                                  </div>
-                             </li>
+                             </li> -->
                              <li class="nav-item">
                                  <a href="index(appointment-scheduling).html#feedback"
                                      class="nav-link">{{ __('header.proccess and procedures') }}</a>
@@ -85,7 +85,9 @@
                              <li class="nav-item dropdown position-static">
                                  <a class="nav-link" href={{ route('contact.us') }}>{{ __('header.contact us') }}</a>
                              </li>
-                            
+                             <li class="nav-item dropdown position-static">
+                                <a class="nav-link" href={{ route('investor.request') }}>{{ __('header.investor') }}</a>
+                            </li>
                      </div>
                  </div>
          </nav>

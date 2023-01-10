@@ -8,7 +8,7 @@
 			<div class="fancy-hero-six">
 				<div class="container">
 					<h1 class="heading">{{ __('portfolio.title') }}</h1>
-					<p class="sub-heading">{{ __('portfolio.sub-title') }}</p>
+					<p class="sub-heading"></p>
 				</div>
 			</div> <!-- /.fancy-hero-six -->
 
