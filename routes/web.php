@@ -3,6 +3,12 @@
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TeamMembersController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\MissionController;
+use App\Http\Controllers\AngelController;
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +40,14 @@ Route::middleware('auth')->group(function () {
 Route::get('/contact-us', [ContactUsController::class, 'create'])->name('cantact.us');
 //About Us Route
 Route::get('/about-us', [AboutUsController::class, 'create'])->name('about.us');
+//TeamMember Route
+Route::get('/team-members',[TeamMembersController::class,'create'])->name('team-members');
+//Portfolio
+Route::get('/portfolio',[PortfolioController::class,'create'])->name('portfolio');
+//Mission
+Route::get('/mission',[MissionController::class,'create'])->name('mission');
+//Angel
+Route::get('/angel',[AngelController::class,'create'])->name('angel');
 
 
 require __DIR__ . '/auth.php';

@@ -144,27 +144,27 @@
                                 </div> -->
                             </li>
                             <li class="nav-item dropdown position-static">
-                                <a class="nav-link dropdown-toggle" href="index(appointment-scheduling).html#"
+                                <a class="nav-link dropdown-toggle" href="#"
                                     data-toggle="dropdown">{{__('header.menu2')}}</a>
                                 <div class="dropdown-menu">
                                     <ul class="mega-menu d-flex">
                                         <li>
-                                            <a href="index-event.html" class="dropdown-item img-box">
+                                            <a href="{{route('team-members')}}" class="dropdown-item img-box">
                                                 <span class="font-rubik">هیآت اجرایی</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index-doc.html" class="dropdown-item img-box">
+                                            <a href="{{route('portfolio')}}" class="dropdown-item img-box">
                                                 <span class="font-rubik">پرتفو</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html" class="dropdown-item img-box">
-                                                <span class="font-rubik">کارآفرینی و سرمایه گذاری </span>
+                                            <a href="{{route('mission')}}" class="dropdown-item img-box">
+                                                <span class="font-rubik">چشم انداز و ماموریت</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html" class="dropdown-item img-box">
+                                            <a href="{{route('angel')}}" class="dropdown-item img-box">
                                                 <span class="font-rubik">سرمایه گذار فرشته</span>
                                             </a>
                                         </li>
