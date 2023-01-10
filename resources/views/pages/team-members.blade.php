@@ -40,7 +40,7 @@
 						<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1200">
 							<div class="team-member team-block-one mb-50" onclick="location.href='team-single.html';">
 								<div class="info">
-									<div class="desig">{{ __('team.member1') }}</div>
+									<div class="desig">{{ __('team.member1-position') }}</div>
 									<div class="name">{{ __('team.member1') }}</div>
 								</div>
 								<div class="img-meta"><img src="{{ asset('images/gallery/team-member1.JPG') }}" alt=""></div>
@@ -49,7 +49,7 @@
 						<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
 							<div class="team-member team-block-one mb-50" onclick="location.href='team-single.html';">
 								<div class="info">
-									<div class="desig">{{ __('team.member2') }}</div>
+									<div class="desig">{{ __('team.member2-position') }}</div>
 									<div class="name">{{ __('team.member2') }}</div>
 								</div>
 								<div class="img-meta"><img src="{{ asset('images/gallery/team-member2.JPG') }}" alt=""></div>
@@ -58,7 +58,7 @@
 						<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
 							<div class="team-member team-block-one mb-50" onclick="location.href='team-single.html';">
 								<div class="info">
-									<div class="desig">{{ __('team.member3') }}</div>
+									<div class="desig">{{ __('team.member3-position') }}</div>
 									<div class="name">{{ __('team.member3') }}</div>
 								</div>
 								<div class="img-meta"><img src="{{ asset('images/gallery/team-member3.JPG') }}" alt=""></div>
@@ -83,7 +83,7 @@
 					<div class="border-bottom pt-130 pb-150 md-pt-80 md-pb-80">
 						<div class="row">
 							<div class="col-lg-8 col-md-9 m-auto">
-								<h2 class="font-rubik" data-aos="fade-up" data-aos-duration="1200"></h2>
+								<h2 class="font-rubik" data-aos="fade-up" data-aos-duration="1200">{{ __('team.head-resume') }}</h2>
 								<a href="https://html.creativegigstf.com/deski/rtl/deski/contact-us(light).html" class="theme-btn-one btn-lg mt-50 md-mt-30" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">ارسال رزومه</a>
 							</div>
 						</div>
