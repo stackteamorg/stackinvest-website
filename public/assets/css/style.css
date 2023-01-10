@@ -1238,7 +1238,8 @@ body .theme-btn-fourteen:hover {
     position: relative
 }
 
-.hero-banner-one .subscription-form input {
+.hero-banner-one .subscription-form input,
+.hero-banner-one .subscription-form select {
     width: 100%;
     height: 58px;
     border: 1px solid #e2e2e2;
@@ -6304,7 +6305,8 @@ body .theme-btn-fourteen:hover {
     height: 200px
 }
 
-.form-style-classic .input-group-meta input {
+.form-style-classic .input-group-meta input,
+.form-style-classic .input-group-meta select {
     text-align: right;
     width: 100%;
     height: 100%;
@@ -6328,7 +6330,7 @@ body .theme-btn-fourteen:hover {
 }
 
 .form-style-classic .input-group-meta label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: #bfbfbf;
     position: absolute;
