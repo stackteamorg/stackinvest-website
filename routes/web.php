@@ -44,6 +44,15 @@ Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact
 Route::get('/consultant', [ConsultantRequestController::class, 'create'])->name('consultant');
 Route::post('/consultant', [ConsultantRequestController::class, 'store'])->name('consultant.request');
 
+//TeamMember Route
+Route::get('/team-members',[TeamMembersController::class,'create'])->name('team-members');
+//Portfolio
+Route::get('/portfolio',[PortfolioController::class,'create'])->name('portfolio');
+//Mission
+Route::get('/mission',[MissionController::class,'create'])->name('mission');
+//Angel
+Route::get('/angel',[AngelController::class,'create'])->name('angel');
+
 //Investor Route
 Route::get('/investor', [InvestorController::class, 'create'])->name('investor');
 Route::post('/investor', [InvestorController::class, 'store'])->name('investor.request');
