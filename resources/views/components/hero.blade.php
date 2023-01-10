@@ -31,33 +31,34 @@
     <div class="container">
         <div class="partnerSliderTwo ">
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-21.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo2.jpg') }}"
                         alt=""></div>
             </div>
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-22.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo6.jpg') }}"
                         alt=""></div>
             </div>
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-23.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo7.jpg') }}"
                         alt=""></div>
             </div>
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-24.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo9.jpg') }}"
                         alt=""></div>
             </div>
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-25.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo5.jpg') }}"
                         alt=""></div>
             </div>
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-22.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo10.jpg') }}"
                         alt=""></div>
             </div>
             <div class="item">
-                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/logo/logo-24.png') }}"
+                <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo14.jpg') }}"
                         alt=""></div>
             </div>
+         
         </div>
     </div>
 </div> <!-- /.partner-slider-two -->
