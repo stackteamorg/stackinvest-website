@@ -11,14 +11,12 @@ return [
     | the simple pagination links. You are free to change them to anything
     | you want to customize your views to better match your application.
     |
-    */
+     */
 
-    'menu1' => 'خانه',
-    'menu2'=>'درباره ما',
-    'menu3' => 'فرایندها و رویه ها',
-    'menu4' => 'سرمایه گذاران',
-    'menu5' => 'تماس با ما',
-
-
+    'consultation request' => 'درخواست مشاوره',
+    'location' => 'آدرس',
+    'address' => 'آدرس',
+    'social media' => 'شبکه اجتماعی',
+    'feel free to contact us or just say hi!' => 'راه هایی ارتباط با ما ...',
 
 ];

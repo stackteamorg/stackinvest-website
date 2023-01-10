@@ -20,36 +20,41 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="input-group-meta mb-50">
-									<label>StartUp Name</label>
-									<input type="text" placeholder="Foobey" name="startup_name">
+									<x-input-label for="startup_name" :value="__('auth.startup_name')" />
+									<x-text-input type="text" placeholder="Foobey" name="startup_name" />
+									<x-input-error :messages="$errors->get('startup_name')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
 								<div class="input-group-meta mb-50">
-									<label>Name</label>
-									<input type="text" placeholder="Zahra" name="name">
+									<x-input-label for="name" :value="__('auth.name')" />
+									<x-text-input type="text" placeholder="Zahra" name="name" />
+									<x-input-error :messages="$errors->get('name')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
 								<div class="input-group-meta mb-50">
-									<label>LastName</label>
-									<input type="text" placeholder="Rezaei" name="lastname">
+									<x-input-label for="lastname" :value="__('auth.lastname')" />
+									<x-text-input type="text" placeholder="Rezaei" name="lastname" />
+									<x-input-error :messages="$errors->get('lastname')" class="mt-2" />
 								</div>
 							</div>
 
                             <div class="col-12">
 								<div class="input-group-meta mb-50">
-									<label>Mobile</label>
-									<input type="text" placeholder="09121111111" name="mobile">
+									<x-input-label for="mobile" :value="__('auth.mobile')" />
+									<x-text-input type="text" placeholder="09121111111" name="mobile" />
+									<x-input-error :messages="$errors->get('mobile')" class="mt-2" />
 								</div>
 							</div>
 
 							<div class="col-12">
 								<div class="input-group-meta mb-50">
-									<label>Email</label>
-									<input type="email" placeholder="bolcovfed@ce.edu" name="email">
+									<x-input-label for="email" :value="__('auth.email')" />
+									<x-text-input type="email" placeholder="stackinvest@gmail.com" name="email" />
+									<x-input-error :messages="$errors->get('email')" class="mt-2" />
 								</div>
 							</div>
 
@@ -65,15 +70,17 @@
 
 							<div class="col-12">
 								<div class="input-group-meta mb-50">
-									<label>Password</label>
-									<input type="password" placeholder="Enter Password" class="pass_log_id" name="password">
+									<x-input-label for="password" :value="__('auth.password')" />
+									<x-text-input type="password" placeholder="Enter Password" name="password" />
+									<x-input-error :messages="$errors->get('password')" class="mt-2" />
 									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="input-group-meta mb-15">
-									<label>Re-type Password</label>
-									<input type="password" placeholder="Enter Password" class="pass_log_id" name="password_confirmation">
+									<x-input-label for="re_type_password" :value="__('auth.re_type_password')" />
+									<x-text-input type="password" placeholder="Enter Password" name="password_confirmation" />
+									<x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
 									<span class="placeholder_icon"><span class="passVicon"><img src={{ asset("images/icon/view.svg") }} alt=""></span></span>
 								</div>
 							</div>

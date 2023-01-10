@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ConsultantRequestController;
 use App\Http\Controllers\ContactUsController;
-use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TeamMembersController;
 use App\Http\Controllers\PortfolioController;
@@ -37,17 +38,14 @@ Route::middleware('auth')->group(function () {
 });
 
 //Contact Us Route
-Route::get('/contact-us', [ContactUsController::class, 'create'])->name('cantact.us');
-//About Us Route
-Route::get('/about-us', [AboutUsController::class, 'create'])->name('about.us');
-//TeamMember Route
-Route::get('/team-members',[TeamMembersController::class,'create'])->name('team-members');
-//Portfolio
-Route::get('/portfolio',[PortfolioController::class,'create'])->name('portfolio');
-//Mission
-Route::get('/mission',[MissionController::class,'create'])->name('mission');
-//Angel
-Route::get('/angel',[AngelController::class,'create'])->name('angel');
+Route::get('/contact-us', [ContactUsController::class, 'create'])->name('contact.us');
+Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact.us.request');
+//Consultant Request Route
+Route::get('/consultant', [ConsultantRequestController::class, 'create'])->name('consultant');
+Route::post('/consultant', [ConsultantRequestController::class, 'store'])->name('consultant.request');
 
+//Investor Route
+Route::get('/investor', [InvestorController::class, 'create'])->name('investor');
+Route::post('/investor', [InvestorController::class, 'store'])->name('investor.request');
 
 require __DIR__ . '/auth.php';
