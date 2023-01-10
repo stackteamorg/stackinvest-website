@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+input::selection {
+    border: none;
+}
+
 .ctn-preloader {
     align-items: center;
     -webkit-align-items: center;
