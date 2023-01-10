@@ -1,9 +1,9 @@
-{{-- <x-app-layout> --}}
-    <x-slot name="header">
+<x-app-layout>
+    {{-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -14,20 +14,18 @@
             </div>
         </div>
     </div>
-
-    <body> 
-   
-        <div class="container">
+ 
+        <div class="container mt-80">
           <div class="card">
             <div class="card-header">Laravel Custom Logout</div>
-            <div class="card-body"><div class="col-md-12 text-center">
+            <div class="card-body">
+                <div class="col-md-12 text-center">
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit" class="btn btn-primary">Logout</button>
                     </form>
-                </div></div> 
+                </div>
+            </div> 
           </div>
         </div>
-      
-      </body>
-{{-- </x-app-layout> --}}
+</x-app-layout>

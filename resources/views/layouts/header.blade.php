@@ -84,7 +84,9 @@
                              <li class="nav-item dropdown position-static">
                                  <a class="nav-link" href={{ route('contact.us') }}>{{ __('header.contact us') }}</a>
                              </li>
-                            
+                             <li class="nav-item dropdown position-static">
+                                <a class="nav-link" href={{ route('investor.request') }}>{{ __('header.investor') }}</a>
+                            </li>
                      </div>
                  </div>
          </nav>

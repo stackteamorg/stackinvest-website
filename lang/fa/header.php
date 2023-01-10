@@ -26,6 +26,6 @@ return [
     'investment request' => 'درخواست سرمایه',
     'investment process' => 'فرآیند سرمایه گذاری',
     'entrepreneurship and investment' => 'کارآفرینی و سرمایه گذاری',
-    'about us'=>'درباره ما'
-
+    'about us'=>'درباره ما',
+    'investor'=>'سرمایه گذار'
 ];
