@@ -6,8 +6,8 @@ Partner Section One
 <div class="partner-section-one mt-170 md-mt-90 pb-120 md-pb-80">
            <div class="container">
                <div class="title-style-nine text-center mb-100">
-                   <h6>Our Partners</h6>
-                   <h2>They <span>Trust Us, <img src="images/shape/201.svg" alt=""></span> & Vice Versa</h2>
+                   <h6></h6>
+                   <h2> لیست سرمایه گذاران در تیم استک اینوست  <span> <img src="images/shape/201.svg" alt=""></span> </h2>
                </div>
 
                <div class="row justify-content-center">

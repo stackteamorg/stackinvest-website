@@ -11,11 +11,11 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="hero-heading"> استک تیم <span> <img src="images/shape/189.svg" alt=""></span></h1>
+                <h1 class="hero-heading"> استک اینوست <span> <img src="images/shape/189.svg" alt=""></span></h1>
                 <p class="hero-sub-heading">
-                    استک تیم , تحقق هر ایده
+                    استک اینوست , تحقق هر ایده
                     <br />
-                    استک‌تیم اینجاست که استارتاپ و ایده ناب شما رو تبدیل به واقعیتی به رنگ یک اپلیکیشن و وبسایت حرفه ای
+                    استک‌ اینوست اینجاست که استارتاپ و ایده ناب شما رو تبدیل به واقعیتی به رنگ یک اپلیکیشن و وبسایت حرفه ای
                     کنه
                 </p>
                 <form action="index(appointment-scheduling).html#">

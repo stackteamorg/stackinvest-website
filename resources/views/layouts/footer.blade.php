@@ -47,7 +47,7 @@
 
             <div class="container">
                 <div class="bottom-footer mt-50 md-mt-30">
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-lg-6 order-lg-last mb-20">
                             <ul class="d-flex justify-content-center justify-content-lg-end social-icon">
                                 <li><a href="index(appointment-scheduling).html#"><i class="fa fa-facebook"
@@ -57,9 +57,9 @@
                                 <li><a href="index(appointment-scheduling).html#"><i class="fa fa-linkedin"
                                             aria-hidden="true"></i></a></li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="col-lg-6 order-lg-first mb-20">
-                            <p class="copyright text-center text-lg-right">Copyright @2021 deski inc.</p>
+                            <p class="copyright text-center text-lg-right">Copyright @2021 stack invest.</p>
                         </div>
                     </div>
                 </div>

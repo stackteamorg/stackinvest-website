@@ -8,7 +8,7 @@ Fancy Feature Twenty Two
          <div class="row">
              <div class="col-xl-7 col-md-8 m-auto" data-aos="fade-up" data-aos-duration="1200">
                  <div class="title-style-eight text-center mb-40 md-mb-10">
-                     <h2>One Platform. For any <span>business <img src={{ asset('images/shape/191.svg') }}
+                     <h2><span> <img src={{ asset('images/shape/191.svg') }}
                                  alt=""></span></h2>
                  </div>
              </div>

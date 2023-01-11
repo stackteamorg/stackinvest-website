@@ -9,10 +9,9 @@ Client Feedback Slider Six
                    <div class="row">
                        <div class="col-lg-7 m-auto" data-aos="fade-up" data-aos-duration="1200">
                            <div class="title-style-nine text-center">
-                               <h6>Testimonials</h6>
-                               <h2>What’s Our <span>Client <img src="{{ asset('images/shape/201.svg') }}
-                                           alt=""></span>
-                                   Think About Us.</h2>
+                               <!-- <h6>Testimonials</h6> -->
+                               <h2>{{ __('hero4.Team Members') }}
+                                   </h2>
                            </div>
                        </div>
                    </div>
@@ -21,44 +20,48 @@ Client Feedback Slider Six
                    <div class="item">
                        <div class="feedback-wrapper">
                            <span class="ribbon" style="background:#FF47E2;"></span>
-                           <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
-                               few others” that will be closing in the near future!</p>
+                           <!-- <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
+                               few others” that will be closing in the near future!</p> -->
+                               <img src={{ asset('images/gallery/team-member1.JPG') }} alt="">
                            <div class="d-flex align-items-center">
-                               <img src={{ asset('images/media/img_78.png') }} alt="" class="avatar">
-                               <h6 class="name">Martin Jonas, <span>USA</span></h6>
+                               <!-- <img src={{ asset('images/gallery/team-member1.JPG') }} alt="" class="avatar"> -->
+                               <h6 class="name mt-3">{{ __('hero4.team-member1') }} <span></span></h6>
                            </div>
                        </div> <!-- /.feedback-wrapper -->
                    </div>
                    <div class="item">
                        <div class="feedback-wrapper">
                            <span class="ribbon" style="background:#00E5F3;"></span>
-                           <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
-                               few others” that will be closing in the near future!</p>
+                           <!-- <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
+                               few others” that will be closing in the near future!</p> -->
+                               <img src={{ asset('images/gallery/team-member2.JPG') }} alt="">
                            <div class="d-flex align-items-center">
-                               <img src={{ asset('images/media/img_79.png') }} alt="" class="avatar">
-                               <h6 class="name">Elias Brett, <span>USA</span></h6>
+                         
+                               <h6 class="name mt-3">{{ __('hero4.team-member2') }} <span></span></h6>
                            </div>
                        </div> <!-- /.feedback-wrapper -->
                    </div>
                    <div class="item">
                        <div class="feedback-wrapper">
                            <span class="ribbon" style="background:#FFCF24;"></span>
-                           <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
-                               few others” that will be closing in the near future!</p>
+                           <!-- <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
+                               few others” that will be closing in the near future!</p> -->
+                               <img src={{ asset('images/gallery/team-member3.JPG') }} alt="">
                            <div class="d-flex align-items-center">
-                               <img src={{ asset('images/media/img_80.png') }} alt="" class="avatar">
-                               <h6 class="name">Rashed Ka, <span>Spain</span></h6>
+                               <!-- <img src={{ asset('images/media/img_80.png') }} alt="" class="avatar"> -->
+                               <h6 class="name mt-3">{{ __('hero4.team-member3') }} <span></span></h6>
                            </div>
                        </div> <!-- /.feedback-wrapper -->
                    </div>
                    <div class="item">
                        <div class="feedback-wrapper">
                            <span class="ribbon" style="background:#8F6BF6;"></span>
-                           <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
-                               few others” that will be closing in the near future!</p>
+                           <!-- <p>Already closed 1 deal from Accelerator and in the process of closing 2 more now. Have “a
+                               few others” that will be closing in the near future!</p> -->
+                               <img src={{ asset('images/gallery/team-member4.JPG') }} alt="">
                            <div class="d-flex align-items-center">
-                               <img src={{ asset('images/media/img_78.png') }} alt="" class="avatar">
-                               <h6 class="name">Martin Jonas, <span>USA</span></h6>
+                             
+                               <h6 class="name mt-3"> {{ __('hero4.team-member4') }}<span></span></h6>
                            </div>
                        </div> <!-- /.feedback-wrapper -->
                    </div>
