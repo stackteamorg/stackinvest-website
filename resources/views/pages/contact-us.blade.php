@@ -33,9 +33,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 d-lg-flex">
                         <div class="address-info">
-                            <div class="icon d-flex align-items-end"><img src={{ asset('images/icon/44.svg"') }}
-                                    alt="">
-                            </div>
+                                <iframe width="100%" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=Iran%20tehran%20city%20theatr&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
                             <div class="title">{{ __('contact-us.location') }}</div>
                         </div> <!-- /.address-info -->
                     </div>
