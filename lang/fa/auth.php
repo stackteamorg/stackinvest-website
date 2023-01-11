@@ -31,5 +31,5 @@ return [
     'send message' => 'ارسال پیام',
     'online' => 'آنلاین',
     'personal' => 'حضوری',
-
+    'dashboard' => 'داشبورد'
 ];
