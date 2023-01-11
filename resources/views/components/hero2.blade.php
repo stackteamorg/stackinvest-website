@@ -27,7 +27,7 @@ Fancy Feature Twenty Three
                                <!-- <h6>One click away</h6> -->
                                <h3 class="title">{{ __('hero2.title-1') }}</h3>
                                <p>
-                               {{ __('hero2.paragraf1') }}
+                               {!! __('hero2.paragraf1') !!}
                                </p>
                            </div> <!-- /.text-wrapper -->
                        </div>
