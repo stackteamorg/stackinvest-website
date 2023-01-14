@@ -8,6 +8,7 @@ use App\Http\Controllers\TeamMembersController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\MissionController;
 use App\Http\Controllers\AngelController;
+use App\Http\Controllers\HomeController;
 
 
 use Illuminate\Support\Facades\Route;
@@ -23,9 +24,11 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+// Route::get('/', function () {
+//     return view('pages.home');
+// })->name('home');
+
+Route::get('/',[HomeController::class,'create'])->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
