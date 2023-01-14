@@ -27,7 +27,6 @@ class LogSentEmail
     {
         $message = $event->message;
         $addresses = $message->getTo()[0];
-        var_dump('devops');
         Email::where(['email' => $addresses->getAddress()])->update(['status' => Email::EMAIL_SENT]);
     }
 }

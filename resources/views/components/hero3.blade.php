@@ -4,14 +4,7 @@ Fancy Feature Twenty Four
 ==============================================
 -->
   <div class="fancy-feature-twentyFour pt-90 md-pt-60" id="service">
-      <div class="container">
-          <div class="title-style-nine text-center">
-              <h6>Indutries Include</h6>
-              <h2>Deski has the ability to serve Any <span>Business Segment <img src="images/shape/194.svg"
-                          alt=""></span></h2>
-          </div>
-      </div>
-      <div class="bg-wrapper mt-100 md-mt-80">
+      <div class="bg-wrapper mt-50 md-mt-80">
           <a href="index(appointment-scheduling).html#feedback"
               class="click-scroll-button scroll-target d-flex justify-content-center"><img
                   src={{ asset('images/shape/200.svg') }} alt=""></a>
