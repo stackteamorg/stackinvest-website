@@ -3,7 +3,7 @@
 	<body>
 		<div class="main-page-wrapper p0">
 			<div class="user-data-page clearfix d-lg-flex">
-				<div class="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
+				<div class="illustration-wrapper d-flex align-items-center justify-content-center flex-column">
 					<div class="illustration-holder">
 						<img src={{ asset("images/assets/ils_08.svg") }} alt="" class="illustration">
 						<img src={{ asset("images/assets/ils_08.1.svg") }} alt="" class="shapes shape-one">
