@@ -17,9 +17,8 @@ class SendMail extends Mailable
      *
      * @return void
      */
-    public function __construct(private $view)
+    public function __construct(public string $msg, public $subject = null)
     {
-        //
     }
 
     /**
@@ -30,7 +29,7 @@ class SendMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject:'Send Mail',
+            subject:$this->subject ?? ''
         );
     }
 
@@ -42,8 +41,9 @@ class SendMail extends Mailable
     public function content()
     {
         return new Content(
-            view:'mails',
-            html:$this->view
+            view:'',
+            html:'mails.index',
+            with:[$this->msg]
         );
     }
 

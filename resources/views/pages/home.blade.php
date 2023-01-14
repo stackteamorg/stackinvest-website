@@ -5,5 +5,4 @@
        <x-hero3></x-hero3>
        <x-hero4></x-hero4>
        <x-hero5></x-hero5>
-       <x-hero6></x-hero6>
    </x-app-layout>

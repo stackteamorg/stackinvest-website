@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\SendEmailJob;
+use App\Models\Email;
 use Illuminate\Console\Command;
 
 class SendMail extends Command
@@ -11,14 +13,14 @@ class SendMail extends Command
      *
      * @var string
      */
-    protected $signature = 'send:email {user*}';
+    protected $signature = 'email:send {message} {users*} {--S|subject=}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Send email';
 
     /**
      * Execute the console command.
@@ -27,7 +29,24 @@ class SendMail extends Command
      */
     public function handle()
     {
-        
+        $users = $this->argument('users');
+        $msg = $this->argument('message');
+        $subject = $this->option('subject');
+
+        array_map(function ($user) use ($msg, $subject) {
+
+            if (filter_var($user, FILTER_VALIDATE_EMAIL)) {
+                Email::create([
+                    'email' => $user,
+                    'body' => $msg,
+                ]);
+                dispatch(new SendEmailJob($user, $msg, $subject));
+            } else {
+                $this->error('invalid email');
+            }
+
+        }, $users);
+
         return Command::SUCCESS;
     }
 }
