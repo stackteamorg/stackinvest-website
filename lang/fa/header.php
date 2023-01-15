@@ -28,6 +28,6 @@ return [
     'entrepreneurship and investment' => 'چشم انداز و ماموریت',
     'about us' => 'درباره ما',
     'index' => 'فهرست',
-    'investor'=>'سرمایه گذار',
+    'investor'=>'سرمایه گذاران',
     'home'=>'خانه',
 ];

@@ -87,16 +87,17 @@
                                      </ul>
                                  </div>
                              </li> -->
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="index(appointment-scheduling).html#feedback" class="nav-link">{{
                                     __('header.proccess and procedures') }}</a>
+                            </li> -->
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link" href={{ route('investor.request') }}>{{ __('header.investor') }}</a>
                             </li>
                             <li class="nav-item dropdown position-static">
                                 <a class="nav-link" href={{ route('contact.us') }}>{{ __('header.contact us') }}</a>
                             </li>
-                            <li class="nav-item dropdown position-static">
-                                <a class="nav-link" href={{ route('investor.request') }}>{{ __('header.investor') }}</a>
-                            </li>
+                           
                     </div>
                 </div>
         </nav>
