@@ -29,7 +29,7 @@
     </div>
 
     <div class="container">
-        <div class="partnerSliderTwo ">
+        <div class="partnerSliderTwo mt-80">
             <div class="item">
                 <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo2.jpg') }}"
                         alt=""></div>
