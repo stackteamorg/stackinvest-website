@@ -1,4 +1,3 @@
-
 (function (a) {
     var e = a(".timer"); e.length && e.appear(function () { e.countTo() }); a(window).on("scroll", function () { var b = a(".sticky-menu"); 100 <= a(window).scrollTop() ? b.addClass("fixed") : b.removeClass("fixed") }); a(window).on("scroll", function () { 200 < a(this).scrollTop() ? a(".scroll-top").fadeIn() : a(".scroll-top").fadeOut() }); a(".scroll-top").on("click", function () { a("html, body").animate({ scrollTop: 0 }, 1500); return !1 }); a("a.scroll-target").on("click", function () {
         if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//,
@@ -62,5 +61,36 @@
             draggable: !0, position: new google.maps.LatLng(40.72, -74), visible: !0
         }))
     })
+    $("#form-consultation").on("submit", function (e) {
+        alert('hhhhhhhhhhh');
+        e.preventDefault();
+
+        var _token = $("input[name='_token']").val();
+        var phone = $("#phone").val();
+
+        $.ajax({
+            url: "http://localhost:8000/phone-consultation",
+            type: 'POST',
+            data: { _token: _token, phone: phone },
+            success: function (data) {
+                if (data.success) {
+                    $('#text-success').html(data.success)
+                } else {
+                    printErrorMsg(data.error);
+                }
+            },
+            error: function () {
+                console.log('error')
+            }
+        });
+    });
+
+    function printErrorMsg(msg) {
+        $.each(msg, function (key, value) {
+            console.log(key);
+            $('.' + key + '_err').text(value);
+        });
+    }
+
 })(jQuery);
 

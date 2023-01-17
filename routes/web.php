@@ -8,8 +8,7 @@ use App\Http\Controllers\TeamMembersController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\MissionController;
 use App\Http\Controllers\AngelController;
-
-
+use App\Http\Controllers\PhoneConsultationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,16 +44,19 @@ Route::get('/consultant', [ConsultantRequestController::class, 'create'])->name(
 Route::post('/consultant', [ConsultantRequestController::class, 'store'])->name('consultant.request');
 
 //TeamMember Route
-Route::get('/team-members',[TeamMembersController::class,'create'])->name('team-members');
+Route::get('/team-members', [TeamMembersController::class, 'create'])->name('team-members');
 //Portfolio
-Route::get('/portfolio',[PortfolioController::class,'create'])->name('portfolio');
+Route::get('/portfolio', [PortfolioController::class, 'create'])->name('portfolio');
 //Mission
-Route::get('/mission',[MissionController::class,'create'])->name('mission');
+Route::get('/mission', [MissionController::class, 'create'])->name('mission');
 //Angel
-Route::get('/angel',[AngelController::class,'create'])->name('angel');
+Route::get('/angel', [AngelController::class, 'create'])->name('angel');
 
 //Investor Route
 Route::get('/investor', [InvestorController::class, 'create'])->name('investor');
 Route::post('/investor', [InvestorController::class, 'store'])->name('investor.request');
+
+//Phone Consultation Route
+Route::post('/phone-consultation', [PhoneConsultationController::class, 'store'])->name('phone.consultation');
 
 require __DIR__ . '/auth.php';

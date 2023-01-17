@@ -15,13 +15,18 @@
                 <p class="hero-sub-heading">
                     استک اینوست , تحقق هر ایده
                     <br />
-                    استک اینوست اینجاست که استارتاپ و ایده ناب شما رو تبدیل به واقعیت می
-                    کنه
+
+                    استک‌ اینوست اینجاست که استارتاپ و ایده ناب شما رو تبدیل به واقعیتی به رنگ یک اپلیکیشن و وبسایت حرفه
+                    ای
+                    .کنه
+
                 </p>
-                <form action="index(appointment-scheduling).html#">
-                    <input type="email">
-                    <button class="d-flex justify-content-center align-items-center"><img
-                            src="{{ asset('images/icon/119.svg') }}" alt=""></button>
+                <div class='my-1'><small class="text-success" id='text-success'></small></div>
+                <form method="POST" id="form-consultation">
+                    @csrf
+                    <input type="text" id="phone" name="phone">
+                    <button type="submit" class="d-flex justify-content-center align-items-center" id="btn-submit"
+                        type="submit"><img src="{{ asset('images/icon/119.svg') }}" alt=""></button>
                 </form>
                 <p class="term-text mb-10"> برای مشاوره رایگان شماره تماس خود را وارد نمایید</p>
             </div>
@@ -58,7 +63,7 @@
                 <div class="img-meta d-flex align-items-center"><img src="{{ asset('images/gallery/logo14.jpg') }}"
                         alt=""></div>
             </div>
-         
+
         </div>
     </div>
 </div> <!-- /.partner-slider-two -->
