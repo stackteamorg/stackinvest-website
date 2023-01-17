@@ -62,7 +62,6 @@
         }))
     })
     $("#form-consultation").on("submit", function (e) {
-        alert('hhhhhhhhhhh');
         e.preventDefault();
 
         var _token = $("input[name='_token']").val();
