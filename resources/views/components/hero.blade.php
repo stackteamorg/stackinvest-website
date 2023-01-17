@@ -15,9 +15,11 @@
                 <p class="hero-sub-heading">
                     استک اینوست , تحقق هر ایده
                     <br />
+
                     استک‌ اینوست اینجاست که استارتاپ و ایده ناب شما رو تبدیل به واقعیتی به رنگ یک اپلیکیشن و وبسایت حرفه
                     ای
                     .کنه
+
                 </p>
                 <div class='my-1'><small class="text-success" id='text-success'></small></div>
                 <form method="POST" id="form-consultation">

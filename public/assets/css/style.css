@@ -22,10 +22,10 @@ html {
     font-family: 'yekan';
     direction: rtl;
     text-align: right;
-    /* overflow-x: hidden; */
 }
 
-a {
+a,
+a:hover {
     text-decoration: none;
 }
 
@@ -2433,7 +2433,9 @@ body .theme-btn-fourteen:hover {
     box-shadow: 0 20px 80px rgba(49, 62, 103, .07);
     border-radius: 5px;
     padding: 54px 64px 48px;
-    margin-bottom: 108px
+    margin-bottom: 108px;
+    text-align: center; 
+    margin-left: auto;
 }
 
 .clients-feedback-classic .feedback-wrapper:before {
@@ -3820,7 +3822,7 @@ body .theme-btn-fourteen:hover {
 }
 
 .form-style-light .input-group-meta label {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 6px;
     font-weight: 400;
     color: #cacaca;
@@ -5931,7 +5933,7 @@ body .theme-btn-fourteen:hover {
 }
 
 .fancy-hero-four {
-    background: #ecf6ff;
+    background: #1e81b0;
     position: relative;
     padding: 185px 0 390px;
     z-index: 5;
@@ -6248,7 +6250,7 @@ body .theme-btn-fourteen:hover {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, .04);
-    padding: 55px 15px 22px;
+    padding: 50px 15px 22px;
     text-align: center;
     margin-bottom: 35px;
     height: 100%;
