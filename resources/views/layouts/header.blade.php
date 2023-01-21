@@ -4,6 +4,8 @@
         </div> -->
         <div>
         <a href="{{route('home')}}" class="btn">{{ __('header.home') }}</a>
+        <a href="/" class="btn">{{app()->getLocale() == 'fa' ? 'Farsi' :'English'}}</a>
+        <a href="/en" class="btn">{{app()->getLocale() == 'en' ? 'Farsi' :'English'}}</a>
         </div>
         <div class="right-widget order-lg-3">
             <ul class="d-flex align-items-center">
