@@ -7,7 +7,7 @@
     <img src="images/shape/190.svg" alt="" class="shapes bg-shape">
     <div class="container">
         <div class="illustration-container col-lg-6">
-            <img src="{{ asset('images/gallery/10.JPG') }}" alt="">
+            <img src="" alt="">
         </div>
         <div class="row">
             <div class="col-lg-6">
@@ -33,6 +33,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <div class="container">
         <div class="partnerSliderTwo mt-80">
             <div class="item">
@@ -67,3 +68,44 @@
         </div>
     </div>
 </div> <!-- /.partner-slider-two -->
+=======
+    <div class="partner-slider-two mt-110">
+					<div class="container">
+						<div class="partnerSliderTwo">
+							<div class="item shadow  m-2" style = " border-radius:100px">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                                <p class="text-center p-5"> بازار هدف جذب</p>
+                                </div>
+							</div>
+							<div class="item shadow m-2" style = "border-radius:100px">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                                <p class="text-center p-5"> مزیت رقابتی</p>
+                            </div>
+							</div>
+							<div class="item shadow m-2" style = "border-radius:100px">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                                <p class="text-center p-5"> نحوه بکارگیری سرمایه</p></div>
+							</div>
+							<div class="item shadow m-2" style = "border-radius:100px">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                                <p class="text-center p-5">میزان سرمایه درخواستی</p></div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                               
+                                </div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                                
+                                </div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center">
+                                    <!-- <img src="images/logo/logo-13.png" alt=""> -->
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- /.partner-slider-two -->
+>>>>>>> 6572efdaac9b2db7498f23b8b20a6391304ec6be
